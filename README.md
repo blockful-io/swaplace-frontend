@@ -32,3 +32,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+<!-- Design System -->
+
+For this app's design system we are using:
+
+Fonts:
+Albert Sans
+
+Colors:
+Primary Colored - #E56399
+Secondary Colored - #7FD1B9
+Light Base - #FFFFFF
+Dark Base - #121525
