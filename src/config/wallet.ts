@@ -2,7 +2,6 @@ import { configureChains, createConfig } from "wagmi";
 import { mainnet, goerli } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
-import { InjectedConnector } from "wagmi/connectors/injected";
 import { getDefaultWallets } from "@rainbow-me/rainbowkit";
 
 const apiKey = process.env.NEXT_PUBLIC_USE_TESTNET
@@ -15,7 +14,7 @@ const { chains, publicClient } = configureChains(
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "Swaplace",
+  appName: "Blockful Frontend Web3 Boilerplate",
   projectId: process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID ?? "",
   chains,
 });
