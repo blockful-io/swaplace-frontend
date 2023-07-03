@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Hi! This is Blockful's Frontend Boilerplate
+
+In order to use this boilerplate to kick-off your project:
+
+1. `git clone https://github.com/blockful-io/frontend-web3-boilerplate.git``
+2. Rename the application folder in your machine's file manager
+
 
 ## Getting Started
 
@@ -33,9 +39,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-<!-- Design System -->
-
-For this app's design system we are using:
+##  Design System
 
 Fonts:
 Albert Sans
