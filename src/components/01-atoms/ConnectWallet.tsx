@@ -1,5 +1,6 @@
 import { ThemeContext } from "@/contexts/theme-config";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import Image from "next/image";
 import { useContext, useState } from "react";
 
 export const ConnectWallet = () => {
@@ -84,7 +85,11 @@ export const ConnectWallet = () => {
                 <div style={{ display: "flex", gap: 12 }}>
                   <button
                     onClick={openChainModal}
-                    style={{ display: "flex", alignItems: "center" }}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      color: theme.primaryTextColor,
+                    }}
                     type="button"
                   >
                     {chain.hasIcon && (
@@ -99,10 +104,11 @@ export const ConnectWallet = () => {
                         }}
                       >
                         {chain.iconUrl && (
-                          <img
+                          <Image
                             alt={chain.name ?? "Chain icon"}
                             src={chain.iconUrl}
-                            style={{ width: 12, height: 12 }}
+                            width={12}
+                            height={12}
                           />
                         )}
                       </div>
@@ -110,7 +116,11 @@ export const ConnectWallet = () => {
                     {chain.name}
                   </button>
 
-                  <button onClick={openAccountModal} type="button">
+                  <button
+                    onClick={openAccountModal}
+                    style={{ color: theme.primaryTextColor }}
+                    type="button"
+                  >
                     {account.displayName}
                     {account.displayBalance
                       ? ` (${account.displayBalance})`
