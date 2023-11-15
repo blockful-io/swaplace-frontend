@@ -55,7 +55,7 @@ export const THEMES_CONFIGURATION: Record<Theme, ThemeConfig> = {
     primaryTextColor: "#FFF",
     secondaryTextColor: "#FFF",
     connectWalletBackground: "#FFF",
-    connectWalletTextColor: "#FFF",
+    connectWalletTextColor: "#000",
     hoveredConnectWalletBackground: "#CCC",
     hoveredConnectWalletTextColor: "#FFF",
   },
