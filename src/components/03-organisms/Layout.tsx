@@ -1,6 +1,6 @@
 import { ReactNode, useContext } from "react";
 import { ThemeContext } from "@/contexts/theme-config";
-import { Footer } from "@/components/02-molecules";
+import { Footer, Header } from "@/components/02-molecules";
 import cc from "classcat";
 
 interface ILayout {
@@ -17,6 +17,7 @@ export default function Layout({ children }: ILayout) {
           "w-screen h-screen flex flex-col justify-center items-center bg-teal-950	",
         ])}
       >
+        <Header />
         <main>{children}</main>
         <Footer />
       </div>
