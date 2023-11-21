@@ -4,6 +4,7 @@ import { ThemeContext } from "@/contexts/theme-config";
 import cc from "classcat";
 
 import LandingPageLayout from "@/components/03-organisms/Layout";
+import HomeSection from "@/components/04-templates/HomeSection";
 
 const IndexPage: NextPage = () => {
   const { theme } = useContext(ThemeContext);
@@ -11,11 +12,11 @@ const IndexPage: NextPage = () => {
   return (
     <div
       className={cc([
-        "w-screen h-screen flex flex-col justify-center items-center	",
+        "w-screen h-screen flex flex-col justify-center items-center",
       ])}
     >
       <LandingPageLayout>
-        <div>Home</div>
+        <HomeSection />
       </LandingPageLayout>
     </div>
   );
