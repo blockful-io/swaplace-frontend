@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .title-h2 {
+    @apply font-onest text-lg;
+  }
+
+  .title-h3 {
+    @apply font-onest text-xl;
+  }
+}
+
+p {
+  @apply font-onest text-[16px] text-stone-100 leading-tight;
+}
+
+h2 {
+  @apply font-onest font-bold;
+}

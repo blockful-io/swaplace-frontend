@@ -49,9 +49,9 @@ export const THEMES_CONFIGURATION: Record<Theme, ThemeConfig> = {
   },
   [Theme.Dark]: {
     themeName: Theme.Dark,
-    mainColor: "#121525",
-    secondaryColor: "#FFFFFF",
-    tertiaryColor: "#F7F7F7",
+    mainColor: "#0B221E",
+    secondaryColor: "#DDF23D",
+    tertiaryColor: "#F6F6F1",
     primaryTextColor: "#FFF",
     secondaryTextColor: "#FFF",
     connectWalletBackground: "#FFF",
