@@ -4,18 +4,46 @@
 
 @layer utilities {
   .title-h2 {
-    @apply font-onest text-lg;
+    @apply font-onest text-[32px] text-stone-100 font-medium;
   }
 
   .title-h3 {
-    @apply font-onest text-xl;
+    @apply font-onest text-xl text-stone-100 font-normal;
+  }
+
+  .p-small {
+    @apply font-onest text-sm text-stone-100 font-normal leading-tight;
+  }
+
+  .p-extra-small {
+    @apply font-onest text-xs text-stone-100 font-normal leading-none;
   }
 }
 
 p {
-  @apply font-onest text-[16px] text-stone-100 leading-tight;
+  @apply font-onest text-stone-100  text-base  font-normal leading-tight;
+}
+
+p-bold {
+  @apply font-onest text-stone-100 text-base font-medium  leading-tight;
+}
+
+p-bold-small {
+  @apply font-onest text-stone-100 text-sm font-medium leading-none;
+}
+
+p-bold-medium {
+  @apply font-onest text-stone-100 text-xs font-medium leading-none;
+}
+
+p-bold-upper-case {
+  @apply font-onest text-stone-100 text-xs font-semibold uppercase leading-none;
 }
 
 h2 {
   @apply font-onest font-bold;
+}
+
+label {
+  @apply font-onest text-stone-100 text-base font-semibold;
 }
