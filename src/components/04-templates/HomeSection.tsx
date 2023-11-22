@@ -36,7 +36,7 @@ const HomeSection = () => {
             }}
           />
         </div>
-        <div className="w-[500px] text-center text-stone-100 text-2xl font-light font-['Onest'] leading-[33.60px]">
+        <div className="w-[500px] text-center text-stone-100 text-2xl font-light font-onest leading-[33.60px]">
           <h1>
             Swaplace is a P2P Ownerless, Open-source and feeless environment for
             swaps between ERC20 or ERC721 standards.
