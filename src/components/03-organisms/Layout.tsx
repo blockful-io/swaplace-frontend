@@ -14,7 +14,7 @@ export default function Layout({ children }: ILayout) {
     <>
       <div
         className={cc([
-          "w-screen h-screen flex flex-col justify-center items-center bg-teal-950	",
+          "w-full h-full flex flex-col justify-center items-center",
         ])}
       >
         <Header />
