@@ -45,7 +45,7 @@ function CTAButton<T>({
       onClick={onClick}
       className={cc([
         ButtonCTAVariantsConfigs[variant].style,
-        "flex-col justify-center items-start gap-1 inline-flex w-[394.67px] h-[123px] hover:bg-[#DDF23D] hover:text-stone-100",
+        "group flex-col justify-center items-start gap-1 inline-flex w-[394.67px] h-[123px] hover:bg-[#DDF23D] hover:text-stone-100",
         aditionalStyle,
       ])}
       {...props}
@@ -53,16 +53,16 @@ function CTAButton<T>({
     >
       <div className="flex">
         <div className="text-left space-y-1 w-[270px]">
-          <div className="text-stone-100 text-2xl font-normal font-onest ">
+          <div className="text-stone-100 text-2xl font-normal font-onest group-hover:text-black-500">
             {label}
           </div>
-          <div className="text-neutral-400 text-base font-normal font-onest leading-tight">
+          <div className="text-neutral-400 text-base font-normal font-onest leading-tight group-hover:text-black-500">
             {description}
           </div>
         </div>
-        <div className="w-[52px] h-[52px] p-5 bg-white bg-opacity-10 rounded-[100px] flex items-center justify-center gap-2.5">
+        <div className="w-[52px] h-[52px] p-5 bg-white bg-opacity-10 rounded-[100px] flex items-center justify-center gap-2.5 ">
           <div
-            className={cc(["w-5 h-5 relative origin-top-left -rotate-45 "])}
+            className={cc(["w-5 h-5 relative origin-top-left -rotate-45"])}
           />
           <ArrowCTA color={ButtonCTAVariantsConfigs[variant].arrowColorInHex} />
         </div>
