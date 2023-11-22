@@ -14,11 +14,11 @@ export default function Layout({ children }: ILayout) {
     <>
       <div
         className={cc([
-          "w-full h-full flex flex-col justify-center items-center",
+          "w-full h-full flex flex-col justify-center items-center bg-gradient-green",
         ])}
       >
         <Header />
-        <main>{children}</main>
+        <main className="w-full bg-green">{children}</main>
         <Footer />
       </div>
     </>

@@ -30,11 +30,10 @@ module.exports = {
         },
     },
     backgroundColor: {
-      "button-default": "#DDF23D"
+      "button-default": "#DDF23D",
+      'green': '#05332B',
     },
     backgroundImage: {
-      'gradient1': 'bg-gradient-to-tr from-green-400 via-teal-700 to-stone-950',
-      'gradient2': 'bg-gradient-to-bl from-neutral-950 to-gray-800',
       'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       'gradient-conic':
         'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',

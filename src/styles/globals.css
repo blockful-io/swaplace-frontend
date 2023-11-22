@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .bg-gradient-green {
+    @apply bg-gradient-to-tr from-green-400 via-teal-700 to-stone-950;
+  }
+}
+
 @layer utilities {
   .title-h1 {
     @apply font-onest text-[32px] font-normal leading-10 text-terciaryColored;

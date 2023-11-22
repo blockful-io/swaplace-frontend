@@ -3,8 +3,6 @@ import Lottie from "lottie-react";
 import groovyWalkAnimation from "@/components/animation/typing.json";
 import { swaplaceTelegram } from "@/components/utils";
 import cc from "classcat";
-import bgImage from "@/assets/Background.png";
-import Image from "next/image";
 import { ThemeContext } from "@/contexts/theme-config";
 import { useContext } from "react";
 
@@ -13,20 +11,16 @@ const HomeSection = () => {
 
   return (
     <section
-      className={cc(["flex flex-col items-center h-[640px] mt-20 lg:mb-20"])}
+      className={cc(["w-full flex flex-col items-center h-[640px] mt-20"])}
     >
-      <div className="h-full w-full max-w-screen-2xl flex items-center flex-col justify-center ">
-        <Image
-          alt="Background Home"
-          src={bgImage}
-          quality={100}
-          fill={true}
-          style={{
-            objectFit: "cover",
-            zIndex: -1,
-            backgroundColor: theme.mainColor,
-          }}
-        />
+      <div
+        style={{
+          background: "url('/home-hero-bg.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "top left",
+        }}
+        className="w-full h-full flex items-center flex-col justify-center"
+      >
         <div>
           <Lottie
             animationData={groovyWalkAnimation}

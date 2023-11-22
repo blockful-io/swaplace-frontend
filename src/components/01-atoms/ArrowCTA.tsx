@@ -6,7 +6,7 @@ interface IArrow extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const ArrowCTA = ({ color }: IArrow) => {
   return (
-    <div className=" relative inline-flex items-center group transition-all duration-500 ease-in-out">
+    <div className="group-hover:transform group-hover:rotate-45 group-hover:translate-y-[5px] relative inline-flex items-center group transition-all duration-500 ease-in-out">
       <svg
         width="29"
         height="30"
@@ -23,7 +23,7 @@ const ArrowCTA = ({ color }: IArrow) => {
         </g>
       </svg>
 
-      <span className="ml-2 group-hover:mr-2 group-hover:opacity-100 transition-all duration-500 ease-in-out"></span>
+      <span className="ml-2 group-hover:transformgroup-hover:translate-y-[5px] group-hover:opacity-100 transition-all duration-500 ease-in-out"></span>
     </div>
   );
 };

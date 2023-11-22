@@ -19,8 +19,17 @@ const IndexPage: NextPage = () => {
     >
       <LandingPageLayout>
         <HomeSection />
-        <CardSection />
-        <BenefitsSection />
+        <div
+          className="lg:pt-20"
+          style={{
+            backgroundImage: `url("/home-know-more.png")`,
+            backgroundSize: "cover",
+            backgroundPosition: "top left",
+          }}
+        >
+          <CardSection />
+          <BenefitsSection />
+        </div>
       </LandingPageLayout>
     </div>
   );
