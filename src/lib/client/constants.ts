@@ -49,7 +49,7 @@ export const THEMES_CONFIGURATION: Record<Theme, ThemeConfig> = {
   },
   [Theme.Dark]: {
     themeName: Theme.Dark,
-    mainColor: "#0B221E",
+    mainColor: "#05332B",
     secondaryColor: "#DDF23D",
     tertiaryColor: "#F6F6F1",
     primaryTextColor: "#FFF",

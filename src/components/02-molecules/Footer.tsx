@@ -18,13 +18,13 @@ import {
   blockfulTwitter,
   blockfulWebsite,
   swaplaceTelegram,
-} from "../utils/constants";
+} from "@/components/utils";
 
 export const Footer = () => {
   return (
     <footer
       className={cc([
-        "w-full h-auto px-8 py-10 bg-[#181A19] flex-col justify-start items-center gap-8 flex",
+        "w-full h-auto px-8 py-10 bg-[#181A19] flex-col justify-start items-center gap-8 flex bottom-0",
       ])}
     >
       <div className={cc(["w-full h-14 max-w-screen-2xl "])}>
