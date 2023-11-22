@@ -1,5 +1,6 @@
 export * from "./Arrow";
 export * from "./BlockfulLogo";
+export * from "./Card";
 export * from "./ConnectWallet";
 export * from "./DiscordLogo";
 export * from "./GenericButton";
