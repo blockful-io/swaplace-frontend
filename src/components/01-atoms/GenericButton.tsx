@@ -17,7 +17,7 @@ interface ButtonVariantConfig {
 const ButtonVariantsConfigs: Record<ButtonVariant, ButtonVariantConfig> = {
   [ButtonVariant.DEFAULT]: {
     style:
-      "w-32 h-8 bg-button-default rounded-lg shadow justify-center items-center gap-3 inline-flex text-zinc-900 text-sm font-medium font-['Onest'] leading-none",
+      "w-32 h-8 bg-button-default rounded-lg shadow justify-center items-center gap-3 inline-flex text-zinc-900 text-sm font-medium font-onest leading-none",
     arrowColorInHex: "#181A19",
   },
   [ButtonVariant.ALTERNATIVE]: {
@@ -35,7 +35,7 @@ interface Props<T> extends ButtonHTMLAttributes<HTMLButtonElement> {
   isLoading?: boolean;
 }
 
-function GenericButton<T>({
+export function GenericButton<T>({
   variant = ButtonVariant.DEFAULT,
   label,
   onClick = () => {},
@@ -63,5 +63,3 @@ function GenericButton<T>({
     </button>
   );
 }
-
-export default GenericButton;

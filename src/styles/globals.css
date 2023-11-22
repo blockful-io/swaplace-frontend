@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer utilities {
+  .title-h1 {
+    @apply font-onest text-[32px] font-normal leading-10 text-terciaryColored;
+  }
+
   .title-h2 {
     @apply font-onest text-[32px] text-stone-100 font-medium;
   }
