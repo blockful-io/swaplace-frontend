@@ -1,4 +1,4 @@
 export * from "./CardBenefits";
 export * from "./CardLinks";
-export * from "./Footer";
-export * from "./Header";
+export * from "./TheFooter";
+export * from "./TheHeader";

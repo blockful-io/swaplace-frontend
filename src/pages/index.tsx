@@ -4,7 +4,7 @@ import { ThemeContext } from "@/contexts/theme-config";
 import cc from "classcat";
 
 import LandingPageLayout from "@/components/03-organisms/Layout";
-import HomeSection from "@/components/04-templates/HomeSection";
+import HeroSection from "@/components/04-templates/HeroSection";
 import CardSection from "@/components/04-templates/CardSection";
 import BenefitsSection from "@/components/04-templates/BenefitsSection";
 
@@ -18,7 +18,7 @@ const IndexPage: NextPage = () => {
       ])}
     >
       <LandingPageLayout>
-        <HomeSection />
+        <HeroSection />
         <div
           className="lg:pt-20"
           style={{

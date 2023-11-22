@@ -4,7 +4,7 @@ import { SwaplaceLogo } from "@/components/01-atoms";
 import { blockfulContact } from "@/components/utils";
 import { ButtonVariant, GenericButton } from "@/components/01-atoms";
 
-export const Header = () => {
+export const TheHeader = () => {
   return (
     <header
       className={cc([

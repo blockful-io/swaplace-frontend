@@ -20,7 +20,7 @@ import {
   swaplaceTelegram,
 } from "@/components/utils";
 
-export const Footer = () => {
+export const TheFooter = () => {
   return (
     <footer
       className={cc([

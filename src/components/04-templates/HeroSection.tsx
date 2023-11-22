@@ -6,7 +6,7 @@ import cc from "classcat";
 import { ThemeContext } from "@/contexts/theme-config";
 import { useContext } from "react";
 
-const HomeSection = () => {
+const HeroSection = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -62,4 +62,4 @@ const HomeSection = () => {
   );
 };
 
-export default HomeSection;
+export default HeroSection;
