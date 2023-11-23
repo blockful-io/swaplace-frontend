@@ -8,7 +8,7 @@ import BenefitsIllustration4 from "@/assets/BenefitsIllustration4.svg";
 export const CardBenefits = () => {
   return (
     <>
-      <div className="flex-row space-x-4">
+      <div className="grid xl:grid-cols-4  lg:grid-cols-2 my-12 gap-4 md:grid-cols-2	 ">
         <Card
           title={"Fair fees"}
           label={"No high fees like the ones that are charged by marketplaces."}

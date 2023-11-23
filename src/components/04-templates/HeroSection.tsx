@@ -1,7 +1,7 @@
 import { GenericButton, ButtonVariant } from "@/components/01-atoms";
 import Lottie from "lottie-react";
 import groovyWalkAnimation from "@/components/animation/typing.json";
-import { swaplaceTelegram } from "@/components/utils";
+import { blockfulDiscord, swaplaceProject } from "@/components/utils";
 import cc from "classcat";
 import { ThemeContext } from "@/contexts/theme-config";
 import { useContext } from "react";
@@ -45,7 +45,7 @@ const HeroSection = () => {
         <div className="mt-12">
           <GenericButton
             onClick={() => {
-              window.open(swaplaceTelegram, "_blank");
+              window.open(blockfulDiscord, "_blank");
             }}
             label="Meet Swaplace"
             aditionalStyle="mx-5"
@@ -55,6 +55,9 @@ const HeroSection = () => {
             label={"Start now"}
             variant={ButtonVariant.DEFAULT}
             aditionalStyle={"w-[200px] h-[50px] px-5 py-2"}
+            onClick={() => {
+              window.open(swaplaceProject, "_blank");
+            }}
           />
         </div>
       </div>

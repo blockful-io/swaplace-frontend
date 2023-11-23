@@ -17,9 +17,9 @@ const BenefitsSection = () => {
       }}
     >
       <div className="h-full w-[300px]"></div>
-      <div className="h-[774px] w-full flex items-center flex-col space-x-4 justify-center">
-        <div className="w-[807px] title-h1">
-          With Swaplace, you can{" "}
+      <div className="h-[774px] w-full flex items-center flex-col space-x-4 justify-center md:h-full md:mb-20">
+        <div className="w-[807px] title-h1 md:w-[600px]">
+          With Swaplace, you can
           <span className="text-secondaryColored">create products</span> that
           solve significant issues in the ecosystem
         </div>
