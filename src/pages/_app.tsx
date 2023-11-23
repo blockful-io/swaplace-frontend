@@ -27,6 +27,11 @@ export default function MyApp({
     <>
       <Head>
         <title>Swaplace</title>
+        <link rel="icon" href="/images/favicon.png" />
+        <meta
+          name="description"
+          content="Swaplace is a P2P DEX, ownerless, open-source, and feeless environment designed for swaps between ERC20 or ERC721 standards."
+        />
       </Head>
       <ThemeContextProvider>
         <CookiesProvider>
