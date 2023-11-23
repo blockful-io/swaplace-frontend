@@ -18,10 +18,15 @@ const BenefitsSection = () => {
     >
       <div className="h-full w-[300px]"></div>
       <div className="h-[774px] w-full flex items-center flex-col space-x-4 justify-center md:h-full md:mb-20">
-        <div className="w-[807px] title-h1 md:w-[600px]">
-          With Swaplace, you can
-          <span className="text-secondaryColored">create products</span> that
-          solve significant issues in the ecosystem
+        <div className="lg:w-[807px] text-center align-middle	title-h1 md:w-[600px]">
+          <h1>
+            With Swaplace, you can
+            <span className="text-secondaryColored">
+              {" "}
+              create products <br />
+            </span>{" "}
+            that solve significant issues in the ecosystem
+          </h1>
         </div>
         <div className="my-12">
           <CardBenefits />
