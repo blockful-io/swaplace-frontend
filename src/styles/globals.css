@@ -21,6 +21,10 @@
     @apply font-onest text-xl text-stone-100 font-normal;
   }
 
+  .button-small {
+    @apply font-onest font-medium text-[14px] leading-4;
+  }
+
   .p-small {
     @apply font-onest text-sm text-stone-100 font-normal leading-tight;
   }

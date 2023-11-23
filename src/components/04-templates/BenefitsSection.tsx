@@ -6,15 +6,27 @@ import { swaplaceContracts } from "../utils";
 const BenefitsSection = () => {
   return (
     <section
-      className={cc(["flex flex-col items-center h-[574px] py-24 px-8"])}
+      className={cc([
+        "flex h-full flex-col items-center pt-[100px] px-8 gap-12 ",
+      ])}
+      style={{
+        backgroundImage: "url('/home-know-more.png')",
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "top",
+      }}
     >
-      <div className="h-full w-full max-w-screen-2xl flex items-center flex-col space-x-4 justify-center ">
-        <div className="w-[807px] h-[82px] title-h3">
-          With Swaplace, you can create products that solve significant issues
-          in the ecosystem
+      <div className="h-full w-[300px]"></div>
+      <div className="h-[774px] w-full flex items-center flex-col space-x-4 justify-center">
+        <div className="w-[807px] title-h1">
+          With Swaplace, you can{" "}
+          <span className="text-secondaryColored">create products</span> that
+          solve significant issues in the ecosystem
         </div>
-        <CardBenefits />
-        <div>
+        <div className="my-12">
+          <CardBenefits />
+        </div>
+        <div className="">
           <GenericButton
             label={"Build now"}
             variant={ButtonVariant.DEFAULT}

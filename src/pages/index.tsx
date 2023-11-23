@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { NextPage } from "next";
 import { ThemeContext } from "@/contexts/theme-config";
 import cc from "classcat";
-
 import LandingPageLayout from "@/components/03-organisms/Layout";
 import HeroSection from "@/components/04-templates/HeroSection";
 import CardSection from "@/components/04-templates/CardSection";
@@ -19,14 +18,7 @@ const IndexPage: NextPage = () => {
     >
       <LandingPageLayout>
         <HeroSection />
-        <div
-          className="lg:pt-20"
-          style={{
-            backgroundImage: `url("/home-know-more.png")`,
-            backgroundSize: "cover",
-            backgroundPosition: "top left",
-          }}
-        >
+        <div className="lg:pt-20">
           <CardSection />
           <BenefitsSection />
         </div>
