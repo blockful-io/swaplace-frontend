@@ -1,3 +1,4 @@
+export * from "./BannerAbout";
 export * from "./CardAbout";
 export * from "./CardBenefits";
 export * from "./CardLinks";

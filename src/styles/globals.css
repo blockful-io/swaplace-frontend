@@ -17,6 +17,10 @@
     @apply font-onest text-[40px] text-terciaryColored font-normal leading-[48px];
   }
 
+  .title-h2-medium-2 {
+    @apply font-onest text-[40px] text-primaryColored font-medium leading-[51px];
+  }
+
   .title-h2-normal {
     @apply font-onest text-[32px] font-normal leading-10 text-terciaryColored;
   }
