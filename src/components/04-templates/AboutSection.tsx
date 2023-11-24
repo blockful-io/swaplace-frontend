@@ -2,7 +2,7 @@ import React from "react";
 import cc from "classcat";
 import { CardAbout, CardTopics } from "@/components/02-molecules";
 
-const AboutSection = () => {
+export const AboutSection = () => {
   return (
     <section
       className={cc([
@@ -16,5 +16,3 @@ const AboutSection = () => {
     </section>
   );
 };
-
-export default AboutSection;

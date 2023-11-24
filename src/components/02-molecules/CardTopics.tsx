@@ -140,9 +140,7 @@ export const CardTopics = () => {
 
       <div
         id={howToBuildSectionId}
-        className={cc([
-          "xl:w-[1216px] xl:h-fit grid grid-cols-3 gap-2 border-b border-[#10584C] py-11",
-        ])}
+        className={cc(["xl:w-[1216px] xl:h-fit grid grid-cols-3 gap-2 py-11"])}
       >
         <div className="xl:w-[394px] xl:h-[124px]  ">
           <div className="mb-5">

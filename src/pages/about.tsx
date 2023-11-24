@@ -1,7 +1,8 @@
 import LandingPageLayout from "@/components/03-organisms/Layout";
 import React, { ReactElement } from "react";
 import cc from "classcat";
-import AboutSection from "@/components/04-templates/AboutSection";
+import { AboutSection } from "@/components/04-templates";
+import { BannerAbout } from "@/components/02-molecules";
 
 const About = () => {
   return (
@@ -12,6 +13,7 @@ const About = () => {
     >
       <LandingPageLayout>
         <AboutSection />
+        <BannerAbout />
       </LandingPageLayout>
     </div>
   );
