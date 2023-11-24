@@ -25,7 +25,7 @@ export const BannerAbout = () => {
               window.open(blockfulContact, "_blank");
             }}
             variant={ButtonVariant.DEFAULT}
-            aditionalStyle="w-[200px] h-[56px] bg-primaryColored text-terciaryColored"
+            aditionalStyle="w-[200px] h-[56px] bg-primaryColored text-[#F6F6F1]"
           ></GenericButton>
         </div>
       </div>
