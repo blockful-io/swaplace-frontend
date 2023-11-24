@@ -37,27 +37,25 @@ export const CardTopics = () => {
           </div>
         </div>
         <div className="col-span-2">
-          <div className="xl:w-fit xl:h-full  text-justify">
-            <p className="p-medium ">
-              With Swaplace, we believe in a decentralized future where
-              peer-to-peer exchanges are seamless, open-source, ownerless and
-              feeless.
-              <br />
-              <br /> We envision a world where individuals can exchange digital
-              assets effortlessly, without the burden of high fees,
-              intermediaries, or complex transactions. Swaplace is a movement
-              towards empowering the community, fostering collaboration, and
-              embracing the potential of blockchain technology.
-              <br />
-              <br /> Swaplace is also a public good. As an open-source project,
-              Swaplace is designed to support the greater good of the community.
-              It thrives on the collaborative efforts of our users, who
-              contribute to its development, making it a truly community-driven
-              initiative. With Swaplace, there are no external contract
-              dependencies, no ownership, and no fees. Instead, the platform
-              operates on allowances, ensuring a transparent and accessible
-              environment for all.
-            </p>
+          <div className="xl:w-fit xl:h-full  text-justify p-medium">
+            With Swaplace, we believe in a decentralized future where
+            peer-to-peer exchanges are seamless, open-source, ownerless and
+            feeless.
+            <br />
+            <br /> We envision a world where individuals can exchange digital
+            assets effortlessly, without the burden of high fees,
+            intermediaries, or complex transactions. Swaplace is a movement
+            towards empowering the community, fostering collaboration, and
+            embracing the potential of blockchain technology.
+            <br />
+            <br /> Swaplace is also a public good. As an open-source project,
+            Swaplace is designed to support the greater good of the community.
+            It thrives on the collaborative efforts of our users, who contribute
+            to its development, making it a truly community-driven initiative.
+            With Swaplace, there are no external contract dependencies, no
+            ownership, and no fees. Instead, the platform operates on
+            allowances, ensuring a transparent and accessible environment for
+            all.
           </div>
         </div>
       </div>
@@ -84,21 +82,18 @@ export const CardTopics = () => {
           </div>
         </div>
         <div className="col-span-2">
-          <div className="xl:w-fit xl:h-full  text-justify">
-            <p className="p-medium ">
-              Swaplace is a P2P DEX ownerless platform designed for ERC20 and
-              ERC721 token swaps. It allows you to exchange tokens directly,
-              eliminating the need for intermediaries and reducing transaction
-              complexities.
-              <br />
-              <br />
-              You can trade one token or multiple tokens in a single click,
-              paying only the necessary gas fees from the blockchain. Our
-              intuitive interface enables you to select specific tokens for
-              swapping, putting you in control of your transactions. We've
-              simplified the process, making it efficient, straightforward, and
-              user-friendly.
-            </p>
+          <div className="xl:w-fit xl:h-full  text-justify p-medium">
+            Swaplace is a P2P DEX ownerless platform designed for ERC20 and
+            ERC721 token swaps. It allows you to exchange tokens directly,
+            eliminating the need for intermediaries and reducing transaction
+            complexities.
+            <br />
+            <br />
+            You can trade one token or multiple tokens in a single click, paying
+            only the necessary gas fees from the blockchain. Our intuitive
+            interface enables you to select specific tokens for swapping,
+            putting you in control of your transactions. We've simplified the
+            process, making it efficient, straightforward, and user-friendly.
           </div>
         </div>
       </div>
@@ -125,28 +120,20 @@ export const CardTopics = () => {
           </div>
         </div>
         <div className="col-span-2">
-          <div className="xl:w-fit xl:h-full  text-justify">
-            <p className="p-medium ">
-              The development team is from Blockful.
-              <br />
-              <br />
-              <p className="p-medium">
-                Our team fosters innovation through curiosity and learning.
-              </p>
-              <p className="p-medium">
-                Blockful empowers Blockchain projects with Smart Contracts, DeFi
-                Infrastructure, and Expert Consulting. We have experience and
-                the full potential of Blockchain projects with our expert team,
-                transforming ideas into powerful solutions, propelling your
-                success to new heights.
-              </p>{" "}
-              <br />
-              <p className="p-medium">
-                The team operates as a squad-as-a-service, creating DeFi and
-                Smart Contracts development. You can learn more about Blockful
-                and our team by clicking <a href="https://blockful.io/">here</a>
-              </p>
-            </p>
+          <div className="xl:w-fit xl:h-full  text-justify p-medium">
+            The development team is from Blockful. Our team fosters innovation
+            through curiosity and learning.
+            <br />
+            <br /> Blockful empowers Blockchain projects with Smart Contracts,
+            DeFi Infrastructure, and Expert Consulting. We have experience and
+            the full potential of Blockchain projects with our expert team,
+            transforming ideas into powerful solutions, propelling your success
+            to new heights.
+            <br />
+            <br />
+            The team operates as a squad-as-a-service, creating DeFi and Smart
+            Contracts development. You can learn more about Blockful and our
+            team by clicking <a href="https://blockful.io/">here</a>
           </div>
         </div>
       </div>
@@ -173,33 +160,32 @@ export const CardTopics = () => {
           </div>
         </div>
 
-        <div className="xl:w-fit xl:h-full text-justify col-span-2">
-          <p className="p-medium ">
-            1. Access the Swaplace docs on{" "}
-            <a href="https://github.com/blockful-io/swaplace-contracts">
-              Github{" "}
-            </a>{" "}
-            <br />
-            2. There you will find everything you need to start building,
-            especially the{" "}
-            <a href="https://github.com/blockful-io/swaplace-contracts/tree/main/contracts">
-              contract codes
-            </a>{" "}
-            <br />
-            3. All documentation is{" "}
-            <span className="font-bold">Open-Source</span> and you can use the
-            technology to build your own product <br />
-            4. If you have any difficulties or want to ask any questions, don't
-            hesitate to access our{" "}
-            <a href="https://discord.gg/TbrWjHumrV">Discord community </a>
-            to contact the devs <br />
-            5. There you will find a category for Swaplace builders, pick the
-            “Swaplace Builder” role and feel free to join our community of
-            builders
-            <br />
-            <br />
-            Welcome, builder!
-          </p>
+        <div className="xl:w-fit xl:h-full text-justify col-span-2 p-medium">
+          1. Access the Swaplace docs on{" "}
+          <a href="https://github.com/blockful-io/swaplace-contracts">
+            Github{" "}
+          </a>{" "}
+          <br />
+          2. There you will find everything you need to start building,
+          especially the{" "}
+          <a href="https://github.com/blockful-io/swaplace-contracts/tree/main/contracts">
+            contract codes
+          </a>{" "}
+          <br />
+          3. All documentation is <span className="font-bold">
+            Open-Source
+          </span>{" "}
+          and you can use the technology to build your own product <br />
+          4. If you have any difficulties or want to ask any questions, don't
+          hesitate to access our{" "}
+          <a href="https://discord.gg/TbrWjHumrV">Discord community </a>
+          to contact the devs <br />
+          5. There you will find a category for Swaplace builders, pick the
+          “Swaplace Builder” role and feel free to join our community of
+          builders
+          <br />
+          <br />
+          Welcome, builder!
         </div>
       </div>
     </div>
