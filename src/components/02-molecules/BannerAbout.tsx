@@ -1,6 +1,7 @@
 import React from "react";
 import cc from "classcat";
-import { ButtonVariant, GenericButton } from "../01-atoms";
+import { ButtonVariant, GenericButton } from "@/components/01-atoms";
+import { blockfulContact } from "@/components/utils";
 
 export const BannerAbout = () => {
   return (
@@ -20,6 +21,9 @@ export const BannerAbout = () => {
         <div className="items-center justify-center flex">
           <GenericButton
             label={"Talk to us"}
+            onClick={() => {
+              window.open(blockfulContact, "_blank");
+            }}
             variant={ButtonVariant.DEFAULT}
             aditionalStyle="w-[200px] h-[56px] bg-primaryColored text-terciaryColored"
           ></GenericButton>
