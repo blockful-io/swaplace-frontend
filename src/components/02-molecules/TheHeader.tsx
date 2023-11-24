@@ -37,7 +37,7 @@ export const TheHeader = () => {
           className={cc([
             "w-fit px-4 py-1 hover:bg-[#05332B] bg-emerald-950 rounded-lg justify-start items-center flex",
           ])}
-          href="/"
+          href="/about"
         >
           <div className="font-onest text-center text-stone-100 text-base font-normal leading-tight  ">
             <button aria-label="About">About</button>
