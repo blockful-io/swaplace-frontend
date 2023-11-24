@@ -11,12 +11,12 @@ import {
 import { BlockfulLogo } from "@/components/01-atoms";
 import cc from "classcat";
 import {
+  blockfulContact,
   blockfulDiscord,
   blockfulInstagram,
   blockfulLinkedIn,
   blockfulMedium,
   blockfulWebsite,
-  swaplaceTelegram,
   swaplaceTwitter,
 } from "@/components/utils";
 
@@ -81,7 +81,7 @@ export const TheFooter = () => {
               </button>
               <button
                 onClick={() => {
-                  window.open(swaplaceTelegram, "_blank");
+                  window.open(blockfulContact, "_blank");
                 }}
                 className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 mr-3"
               >
