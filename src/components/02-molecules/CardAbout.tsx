@@ -13,7 +13,7 @@ export const CardAbout = () => {
     <div className="flex justify-center items-center ">
       <div
         className={cc([
-          "xl:w-[1216px] xl:h-[320px] xl:py-[60px] xl:px-12 lg:w-[900px] lg:h-[350px] md:w-[500px] md:h-[550px] md:pt-4 border rounded-[20px] border-greenLight bg-greenDark  ",
+          "xl:w-[1216px] xl:h-[320px] xl:py-[60px] xl:px-12 xl:my-8 lg:w-[900px] lg:h-[350px] md:w-[500px] md:h-[550px] md:pt-4 border rounded-[20px] border-greenLight bg-greenDark  ",
         ])}
         style={{
           backgroundImage: "url('/about-cta-bg.png')",

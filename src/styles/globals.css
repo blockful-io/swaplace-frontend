@@ -13,6 +13,10 @@
     @apply font-onest text-[48px] text-stone-100 font-semibold leading-[61px];
   }
 
+  .title-h2-medium {
+    @apply font-onest text-[40px] text-terciaryColored font-normal leading-[48px];
+  }
+
   .title-h2-normal {
     @apply font-onest text-[32px] font-normal leading-10 text-terciaryColored;
   }
@@ -27,6 +31,10 @@
 
   .button-small {
     @apply font-onest font-medium text-[14px] leading-4;
+  }
+
+  .p-medium {
+    @apply font-onest font-normal text-black-200 text-[18px] leading-[25.2px];
   }
 
   .p-small {
@@ -64,4 +72,8 @@ h2 {
 
 label {
   @apply font-onest text-stone-100 text-base font-semibold;
+}
+
+a {
+  @apply underline-offset-0 text-stone-50 hover:text-stone-300;
 }

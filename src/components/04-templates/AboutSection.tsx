@@ -1,6 +1,6 @@
 import React from "react";
 import cc from "classcat";
-import { CardAbout } from "@/components/02-molecules";
+import { CardAbout, CardTopics } from "@/components/02-molecules";
 
 const AboutSection = () => {
   return (
@@ -11,6 +11,7 @@ const AboutSection = () => {
     >
       <div className="w-full h-full flex items-center flex-col justify-center">
         <CardAbout />
+        <CardTopics />
       </div>
     </section>
   );
