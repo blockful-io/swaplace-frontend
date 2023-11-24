@@ -10,6 +10,10 @@
 
 @layer utilities {
   .title-h1 {
+    @apply font-onest text-[48px] text-stone-100 font-semibold leading-[61px];
+  }
+
+  .title-h2-normal {
     @apply font-onest text-[32px] font-normal leading-10 text-terciaryColored;
   }
 
