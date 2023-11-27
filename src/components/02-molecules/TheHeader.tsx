@@ -47,7 +47,7 @@ export const TheHeader = () => {
           className={cc([
             "w-[115px] px-4 py-1 hover:bg-[#05332B] bg-emerald-950 rounded-lg justify-start items-center flex",
           ])}
-          href="/"
+          href="/ecosystem"
         >
           <div className="text-center font-onest text-stone-100 text-base font-normal  leading-tight">
             <button aria-label="Ecosystem">Ecosystem</button>
