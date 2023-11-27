@@ -46,7 +46,7 @@
   }
 
   .p-extra-small {
-    @apply font-onest text-xs text-stone-100 font-normal leading-none;
+    @apply font-onest text-[16px]  text-black-200 font-light leading-[22.4px];
   }
 }
 
