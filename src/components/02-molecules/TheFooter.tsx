@@ -1,5 +1,7 @@
 import React from "react";
+import cc from "classcat";
 import {
+  BlockfulLogo,
   DiscordLogo,
   InstagramLogo,
   LinkedinLogo,
@@ -8,8 +10,6 @@ import {
   TelegramLogo,
   TwitterLogo,
 } from "@/components/01-atoms";
-import { BlockfulLogo } from "@/components/01-atoms";
-import cc from "classcat";
 import {
   blockfulContact,
   blockfulDiscord,

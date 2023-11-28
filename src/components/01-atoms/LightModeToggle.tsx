@@ -1,7 +1,7 @@
+import { useContext } from "react";
 import { ThemeContext } from "@/contexts/theme-config";
 import { Theme } from "@/lib/client/constants";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
-import { useContext, useEffect } from "react";
 
 export const LightModeToggle = () => {
   const { theme, updateActiveThemeConfiguration } = useContext(ThemeContext);

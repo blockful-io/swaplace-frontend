@@ -1,8 +1,12 @@
 import React from "react";
-import CTAButton, { ButtonCTAVariant } from "../01-atoms/CTAButton";
-import { blockfulContact, blockfulDiscord, swaplaceContracts } from "../utils";
+import { ButtonCTAVariant, CTAButton } from "@/components/01-atoms";
+import {
+  blockfulContact,
+  blockfulDiscord,
+  swaplaceContracts,
+} from "@/components/utils";
 
-const CardLinks = () => {
+export const CardLinks = () => {
   return (
     <>
       <div className="grid xl:grid-cols-3 lg:grid-cols-2 lg:my-1 my-12 gap-4 md:grid-cols-1 md:m-0	 ">
@@ -38,5 +42,3 @@ const CardLinks = () => {
     </>
   );
 };
-
-export default CardLinks;

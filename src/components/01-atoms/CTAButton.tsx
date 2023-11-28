@@ -1,7 +1,6 @@
 import React, { ButtonHTMLAttributes } from "react";
 import cc from "classcat";
-import LoadingIndicator from "./LoadingIndicator";
-import ArrowCTA from "./ArrowCTA";
+import { ArrowCTA, LoadingIndicator } from "@/components/01-atoms";
 
 export enum ButtonCTAVariant {
   DEFAULT,
@@ -37,7 +36,7 @@ interface Props<T> extends ButtonHTMLAttributes<HTMLButtonElement> {
   isLoading?: boolean;
 }
 
-function CTAButton<T>({
+export function CTAButton<T>({
   variant = ButtonCTAVariant.DEFAULT,
   label,
   description,
@@ -79,5 +78,3 @@ function CTAButton<T>({
     </button>
   );
 }
-
-export default CTAButton;

@@ -1,6 +1,6 @@
 import React from "react";
 import cc from "classcat";
-import CTAButton, { ButtonCTAVariant } from "../01-atoms/CTAButton";
+import { ButtonCTAVariant, CTAButton } from "@/components/01-atoms";
 import {
   howToBuildSectionId,
   manifestoSectionId,

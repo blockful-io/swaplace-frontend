@@ -1,9 +1,9 @@
 import cc from "classcat";
-import { CardBenefits } from "@/components/02-molecules";
 import { ButtonVariant, GenericButton } from "@/components/01-atoms";
-import { swaplaceContracts } from "../utils";
+import { CardBenefits } from "@/components/02-molecules";
+import { swaplaceContracts } from "@/components/utils";
 
-const BenefitsSection = () => {
+export const BenefitsSection = () => {
   return (
     <section
       className={cc([
@@ -47,4 +47,3 @@ const BenefitsSection = () => {
     </section>
   );
 };
-export default BenefitsSection;

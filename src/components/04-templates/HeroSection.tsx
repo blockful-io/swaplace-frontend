@@ -1,12 +1,12 @@
-import { GenericButton, ButtonVariant } from "@/components/01-atoms";
+import { useContext } from "react";
+import cc from "classcat";
 import Lottie from "lottie-react";
 import groovyWalkAnimation from "@/components/animation/typing.json";
-import { blockfulDiscord, swaplaceProject } from "@/components/utils";
-import cc from "classcat";
 import { ThemeContext } from "@/contexts/theme-config";
-import { useContext } from "react";
+import { GenericButton, ButtonVariant } from "@/components/01-atoms";
+import { blockfulDiscord, swaplaceProject } from "@/components/utils";
 
-const HeroSection = () => {
+export const HeroSection = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -64,5 +64,3 @@ const HeroSection = () => {
     </section>
   );
 };
-
-export default HeroSection;

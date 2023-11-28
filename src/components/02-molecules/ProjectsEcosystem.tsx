@@ -1,6 +1,6 @@
 import React from "react";
-import { CardProject } from "../01-atoms/CardProject";
-import { ObjCardProject } from "../utils";
+import { CardProject } from "@/components/01-atoms";
+import { ObjCardProject } from "@/components/utils";
 
 export const ProjectsEcosystem = () => {
   return (

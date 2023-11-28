@@ -4,7 +4,7 @@ interface AnimatedArrowProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   color?: string;
 }
 
-const AnimatedArrow = ({ color }: AnimatedArrowProps) => {
+export const Arrow = ({ color }: AnimatedArrowProps) => {
   return (
     <div className=" relative inline-flex items-center group transition-all duration-500 ease-in-out">
       <svg
@@ -26,5 +26,3 @@ const AnimatedArrow = ({ color }: AnimatedArrowProps) => {
     </div>
   );
 };
-
-export default AnimatedArrow;

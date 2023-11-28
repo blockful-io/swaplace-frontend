@@ -1,7 +1,7 @@
+import { useContext, useState } from "react";
 import { ThemeContext } from "@/contexts/theme-config";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Image from "next/image";
-import { useContext, useState } from "react";
 
 export const ConnectWallet = () => {
   const { theme } = useContext(ThemeContext);

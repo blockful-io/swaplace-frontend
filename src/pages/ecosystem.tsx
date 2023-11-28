@@ -1,6 +1,6 @@
 import React from "react";
 import cc from "classcat";
-import LandingPageLayout from "@/components/03-organisms/Layout";
+import { TheLayout } from "@/components/03-organisms/TheLayout";
 import { EcosystemSection } from "@/components/04-templates/EcosystemSection";
 
 const Ecosystem = () => {
@@ -10,9 +10,9 @@ const Ecosystem = () => {
         "w-full h-full  flex flex-col justify-center items-center	",
       ])}
     >
-      <LandingPageLayout>
+      <TheLayout>
         <EcosystemSection />
-      </LandingPageLayout>
+      </TheLayout>
     </div>
   );
 };

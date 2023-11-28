@@ -4,7 +4,7 @@ interface IArrow extends ButtonHTMLAttributes<HTMLButtonElement> {
   color?: string;
 }
 
-const ArrowCTA = ({ color }: IArrow) => {
+export const ArrowCTA = ({ color }: IArrow) => {
   return (
     <div className="group-hover:transform group-hover:rotate-45 group-hover:translate-y-[5px] relative inline-flex items-center group transition-all duration-500 ease-in-out ">
       <svg
@@ -27,5 +27,3 @@ const ArrowCTA = ({ color }: IArrow) => {
     </div>
   );
 };
-
-export default ArrowCTA;

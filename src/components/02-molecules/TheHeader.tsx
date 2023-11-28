@@ -1,9 +1,12 @@
 import React from "react";
 import cc from "classcat";
-import { SwaplaceLogo } from "@/components/01-atoms";
-import { blockfulContact, blockfulDiscord } from "@/components/utils";
-import { ButtonVariant, GenericButton } from "@/components/01-atoms";
 import Link from "next/link";
+import {
+  ButtonVariant,
+  GenericButton,
+  SwaplaceLogo,
+} from "@/components/01-atoms";
+import { blockfulContact, blockfulDiscord } from "@/components/utils";
 
 export const TheHeader = () => {
   return (

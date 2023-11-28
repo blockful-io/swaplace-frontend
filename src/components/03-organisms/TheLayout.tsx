@@ -1,13 +1,13 @@
 import { ReactNode, useContext } from "react";
+import cc from "classcat";
 import { ThemeContext } from "@/contexts/theme-config";
 import { TheFooter, TheHeader } from "@/components/02-molecules";
-import cc from "classcat";
 
-interface ILayout {
+interface ITheLayout {
   children?: ReactNode;
 }
 
-export default function Layout({ children }: ILayout) {
+export function TheLayout({ children }: ITheLayout) {
   const { theme } = useContext(ThemeContext);
 
   return (

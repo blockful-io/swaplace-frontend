@@ -1,7 +1,6 @@
 import React, { ButtonHTMLAttributes } from "react";
-import Arrow from "./Arrow";
 import cc from "classcat";
-import LoadingIndicator from "./LoadingIndicator";
+import { Arrow, LoadingIndicator } from "@/components/01-atoms";
 
 export enum ButtonVariant {
   DEFAULT,

@@ -1,11 +1,13 @@
 import { useContext } from "react";
+import cc from "classcat";
 import { NextPage } from "next";
 import { ThemeContext } from "@/contexts/theme-config";
-import cc from "classcat";
-import LandingPageLayout from "@/components/03-organisms/Layout";
-import HeroSection from "@/components/04-templates/HeroSection";
-import CardSection from "@/components/04-templates/CardSection";
-import BenefitsSection from "@/components/04-templates/BenefitsSection";
+import { TheLayout } from "@/components/03-organisms/TheLayout";
+import {
+  HeroSection,
+  CardSection,
+  BenefitsSection,
+} from "@/components/04-templates";
 
 const IndexPage: NextPage = () => {
   const { theme } = useContext(ThemeContext);
@@ -16,13 +18,13 @@ const IndexPage: NextPage = () => {
         "w-full h-full flex flex-col justify-center items-center",
       ])}
     >
-      <LandingPageLayout>
+      <TheLayout>
         <HeroSection />
         <div className="lg:pt-20">
           <CardSection />
           <BenefitsSection />
         </div>
-      </LandingPageLayout>
+      </TheLayout>
     </div>
   );
 };

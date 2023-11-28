@@ -1,7 +1,11 @@
 import React from "react";
-import ArrowCTA from "./ArrowCTA";
 import cc from "classcat";
-import { ICardProject, networkImages, swaplaceContracts } from "../utils";
+import { ArrowCTA } from "@/components/01-atoms";
+import {
+  ICardProject,
+  networkImages,
+  swaplaceContracts,
+} from "@/components/utils";
 
 export const CardProject = ({ projects }: { projects: ICardProject[] }) => {
   return (

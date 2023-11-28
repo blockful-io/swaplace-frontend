@@ -6,7 +6,7 @@ import { DiscordLogo } from "../01-atoms/DiscordLogo";
 export const blockfulTwitter = "https://twitter.com/blockful_io";
 export const blockfulDiscord = "https://discord.gg/B6uDmm7hvC";
 export const blockfulLinkedIn = "https://www.linkedin.com/company/blockful/";
-export const blockfulInstagram = "https://www.instagram.com/blockfu.io/";
+export const blockfulInstagram = "https://www.instagram.com/blockful.io/";
 export const blockfulWebsite = "https://blockful.io/";
 export const blockfulContact = "https://t.me/Danimimm";
 export const blockfulMedium =

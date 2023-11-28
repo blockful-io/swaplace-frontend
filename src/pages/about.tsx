@@ -1,8 +1,8 @@
-import LandingPageLayout from "@/components/03-organisms/Layout";
-import React, { ReactElement } from "react";
+import React from "react";
 import cc from "classcat";
-import { AboutSection } from "@/components/04-templates";
 import { BannerAbout } from "@/components/02-molecules";
+import { TheLayout } from "@/components/03-organisms";
+import { AboutSection } from "@/components/04-templates";
 
 const About = () => {
   return (
@@ -11,10 +11,10 @@ const About = () => {
         "w-full h-full  flex flex-col justify-center items-center	",
       ])}
     >
-      <LandingPageLayout>
+      <TheLayout>
         <AboutSection />
         <BannerAbout />
-      </LandingPageLayout>
+      </TheLayout>
     </div>
   );
 };
