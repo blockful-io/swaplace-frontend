@@ -31,11 +31,13 @@ const BenefitsSection = () => {
         <div className="my-12">
           <CardBenefits />
         </div>
-        <div className="">
+        <div>
           <GenericButton
             label={"Build now"}
             variant={ButtonVariant.DEFAULT}
-            aditionalStyle={"w-[200px] h-[50px] px-5 py-2  "}
+            aditionalStyle={
+              "w-[200px] h-[50px] px-5 py-2 font-onest font-semibold text-[18px] leading-[23px]; "
+            }
             onClick={() => {
               window.open(swaplaceContracts, "_blank");
             }}

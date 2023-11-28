@@ -41,6 +41,10 @@
     @apply font-onest font-normal text-black-200 text-[18px] leading-[25.2px];
   }
 
+  .p-normal-xs {
+    @apply font-onest text-black-200 text-xs font-normal;
+  }
+
   .p-small {
     @apply font-onest text-sm text-stone-100 font-normal leading-tight;
   }

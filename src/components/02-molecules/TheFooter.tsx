@@ -19,6 +19,7 @@ import {
   blockfulWebsite,
   swaplaceTwitter,
 } from "@/components/utils";
+import Link from "next/link";
 
 export const TheFooter = () => {
   return (
@@ -32,14 +33,18 @@ export const TheFooter = () => {
           className={cc(["justify-center  items-center flex flex-col gap-3 "])}
         >
           <div>
-            <a href="/" aria-label="Swaplace Logo">
+            <Link href="/" aria-label="Swaplace Logo">
               <SwaplaceLogo />
-            </a>
+            </Link>
           </div>
           <div>
-            <a className={cc(["text-[#A3A9A5]"])}>
+            <p
+              className={cc([
+                "text-black-200 font-onest font-normal text-[16px] leading-5",
+              ])}
+            >
               Transforming tokens, empowering trade.
-            </a>
+            </p>
           </div>
         </div>
       </div>
@@ -51,12 +56,16 @@ export const TheFooter = () => {
         <div className={cc(["flex justify-between w-auto"])}>
           <div className={cc(["flex-col items-center space-y-2"])}>
             <div className={cc(["w-fit"])}>
-              <a href={blockfulWebsite} aria-label="Blockful Logo">
+              <a
+                href={blockfulWebsite}
+                aria-label="Blockful Logo"
+                target="_blank"
+              >
                 <BlockfulLogo />
               </a>
             </div>
             <div>
-              <p className={cc(["text-[#A3A9A5]"])}>
+              <p className={cc(["p-normal-xs"])}>
                 2023 © Blockful. All rights reserved.
               </p>
             </div>
@@ -68,6 +77,7 @@ export const TheFooter = () => {
                   window.open(swaplaceTwitter, "_blank");
                 }}
                 className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 mr-3"
+                aria-label="Twitter Logo"
               >
                 <TwitterLogo />
               </button>
@@ -76,6 +86,7 @@ export const TheFooter = () => {
                   window.open(blockfulDiscord, "_blank");
                 }}
                 className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 mr-3"
+                aria-label="Discord Logo"
               >
                 <DiscordLogo />
               </button>
@@ -84,6 +95,7 @@ export const TheFooter = () => {
                   window.open(blockfulContact, "_blank");
                 }}
                 className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 mr-3"
+                aria-label="Telegram Logo"
               >
                 <TelegramLogo />
               </button>
@@ -92,6 +104,7 @@ export const TheFooter = () => {
                   window.open(blockfulLinkedIn, "_blank");
                 }}
                 className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 mr-3"
+                aria-label="Linkedin Logo"
               >
                 <LinkedinLogo />
               </button>
@@ -100,6 +113,7 @@ export const TheFooter = () => {
                   window.open(blockfulInstagram, "_blank");
                 }}
                 className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 mr-3"
+                aria-label="Instagram Logo"
               >
                 <InstagramLogo />
               </button>
@@ -108,6 +122,7 @@ export const TheFooter = () => {
                   window.open(blockfulMedium, "_blank");
                 }}
                 className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 mr-3"
+                aria-label="Medium Logo"
               >
                 <MediumLogo />
               </button>

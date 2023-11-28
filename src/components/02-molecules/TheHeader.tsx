@@ -1,8 +1,9 @@
 import React from "react";
 import cc from "classcat";
 import { SwaplaceLogo } from "@/components/01-atoms";
-import { blockfulContact } from "@/components/utils";
+import { blockfulContact, blockfulDiscord } from "@/components/utils";
 import { ButtonVariant, GenericButton } from "@/components/01-atoms";
+import Link from "next/link";
 
 export const TheHeader = () => {
   return (
@@ -12,7 +13,7 @@ export const TheHeader = () => {
       ])}
     >
       <div>
-        <a
+        <Link
           className={cc([
             "w-fit h-full opacity-80 justify-start items-center gap-[6.45px] flex pl-4 pr-4 rounded-lg ",
           ])}
@@ -20,10 +21,10 @@ export const TheHeader = () => {
           aria-label="Swaplace Logo"
         >
           <SwaplaceLogo />
-        </a>
+        </Link>
       </div>
       <div className=" rounded-lg justify-start items-center gap-1 flex ">
-        <a
+        <Link
           className={cc([
             "w-fit px-4 py-1 hover:bg-[#05332B] rounded-lg justify-start items-center flex",
           ])}
@@ -32,8 +33,8 @@ export const TheHeader = () => {
           <div className="font-onest text-center text-stone-100 text-base font-normal leading-tight ">
             <button aria-label="Home">Home</button>
           </div>
-        </a>
-        <a
+        </Link>
+        <Link
           className={cc([
             "w-fit px-4 py-1 hover:bg-[#05332B] bg-emerald-950 rounded-lg justify-start items-center flex",
           ])}
@@ -42,8 +43,8 @@ export const TheHeader = () => {
           <div className="font-onest text-center text-stone-100 text-base font-normal leading-tight  ">
             <button aria-label="About">About</button>
           </div>
-        </a>
-        <a
+        </Link>
+        <Link
           className={cc([
             "w-[115px] px-4 py-1 hover:bg-[#05332B] bg-emerald-950 rounded-lg justify-start items-center flex",
           ])}
@@ -52,27 +53,29 @@ export const TheHeader = () => {
           <div className="text-center font-onest text-stone-100 text-base font-normal  leading-tight">
             <button aria-label="Ecosystem">Ecosystem</button>
           </div>
-        </a>
-        <a
+        </Link>
+        <Link
           className={cc([
             "w-fit px-4 py-1 hover:bg-[#05332B] bg-emerald-950 rounded-lg justify-start items-center flex",
           ])}
-          href="https://discord.gg/aPVhNSR9sS"
+          href={blockfulDiscord}
+          target="_blank"
         >
           <div className="text-center font-onest text-stone-100 text-base font-normal leading-tight">
             <button aria-label="Community">Community</button>
           </div>
-        </a>
-        <a
+        </Link>
+        <Link
           className={cc([
             "w-fit px-4 py-1 hover:bg-[#05332B] bg-emerald-950 rounded-lg justify-start items-center flex",
           ])}
-          href="https://discord.gg/m75QtXydZM"
+          href={blockfulDiscord}
+          target="_blank"
         >
           <div className="text-center text-stone-100 text-base font-normal font-onest">
             <button aria-label="Incentives">Incentives</button>
           </div>
-        </a>
+        </Link>
       </div>
       <div
         className={cc(["justify-center items-center flex shadow bg-darkBase "])}
