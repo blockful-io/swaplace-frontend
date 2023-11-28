@@ -18,6 +18,8 @@ export const swaplaceTwitter = "https://twitter.com/Swaplace_io";
 export const swaplaceTelegram = "https://t.me/swaplace";
 export const swaplaceContracts =
   "https://github.com/blockful-io/swaplace-contracts";
+export const swaplaceContractsMain =
+  "https://github.com/blockful-io/swaplace-contracts/tree/main/contracts";
 
 /*About Section*/
 export const manifestoSectionId = "manifestoSection";

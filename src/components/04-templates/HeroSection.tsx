@@ -36,7 +36,7 @@ const HeroSection = () => {
             }}
           />
         </div>
-        <div className="w-[500px] text-center text-stone-100 text-2xl font-light font-onest leading-[33.60px]">
+        <div className="w-[600px] h-[101px] text-center text-stone-100 text-2xl font-light font-onest leading-[33.60px]">
           <h1>
             Swaplace is a P2P DEX, ownerless, open-source, and feeless
             environment designed for swaps between ERC20 or ERC721 standards.
@@ -48,13 +48,13 @@ const HeroSection = () => {
               window.open(blockfulDiscord, "_blank");
             }}
             label="Meet Swaplace"
-            aditionalStyle="mx-5"
+            aditionalStyle="mx-5 button-medium w-[205px]"
             variant={ButtonVariant.ALTERNATIVE}
           />
           <GenericButton
             label={"Start now"}
             variant={ButtonVariant.DEFAULT}
-            aditionalStyle={"w-[200px] h-[50px] px-5 py-2"}
+            aditionalStyle={"w-[200px] h-[50px] px-5 py-2 button-medium"}
             onClick={() => {
               window.open(swaplaceProject, "_blank");
             }}

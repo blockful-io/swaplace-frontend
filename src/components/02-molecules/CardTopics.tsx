@@ -6,8 +6,12 @@ import aboutIllustration2 from "public/AboutIllustration2.svg";
 import aboutIllustration3 from "public/AboutIllustration3.svg";
 import aboutIllustration4 from "public/AboutIllustration4.svg";
 import {
+  blockfulDiscord,
+  blockfulWebsite,
   howToBuildSectionId,
   manifestoSectionId,
+  swaplaceContracts,
+  swaplaceContractsMain,
   theTeamSectionId,
   whatIsSwaplaceSectionId,
 } from "@/components/utils";
@@ -132,8 +136,10 @@ export const CardTopics = () => {
             <br />
             <br />
             The team operates as a squad-as-a-service, creating DeFi and Smart
-            Contracts development. You can learn more about Blockful and our
-            team by clicking <a href="https://blockful.io/">here</a>
+            Contracts development. Here you can learn more about our team and{" "}
+            <a href={blockfulWebsite} target="_blank">
+              Blockful
+            </a>
           </div>
         </div>
       </div>
@@ -160,13 +166,13 @@ export const CardTopics = () => {
 
         <div className="xl:w-fit xl:h-full text-justify col-span-2 p-medium">
           1. Access the Swaplace docs on{" "}
-          <a href="https://github.com/blockful-io/swaplace-contracts">
-            Github{" "}
-          </a>{" "}
+          <a href={swaplaceContracts} target="_blank">
+            Github
+          </a>
           <br />
           2. There you will find everything you need to start building,
           especially the{" "}
-          <a href="https://github.com/blockful-io/swaplace-contracts/tree/main/contracts">
+          <a href={swaplaceContractsMain} target="_blank">
             contract codes
           </a>{" "}
           <br />
@@ -176,7 +182,9 @@ export const CardTopics = () => {
           and you can use the technology to build your own product <br />
           4. If you have any difficulties or want to ask any questions, don't
           hesitate to access our{" "}
-          <a href="https://discord.gg/TbrWjHumrV">Discord community </a>
+          <a href={blockfulDiscord} target="_blank">
+            Discord community{" "}
+          </a>
           to contact the devs <br />
           5. There you will find a category for Swaplace builders, pick the
           “Swaplace Builder” role and feel free to join our community of

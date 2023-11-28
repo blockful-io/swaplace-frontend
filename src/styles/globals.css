@@ -33,6 +33,10 @@
     @apply font-onest text-xl text-stone-100 font-normal;
   }
 
+  .button-medium {
+    @apply font-onest font-semibold text-[18px] leading-[23px];
+  }
+
   .button-small {
     @apply font-onest font-medium text-[14px] leading-4;
   }

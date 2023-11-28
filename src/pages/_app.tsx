@@ -32,6 +32,11 @@ export default function MyApp({
           name="description"
           content="Swaplace is a P2P DEX, ownerless, open-source, and feeless environment designed for swaps between ERC20 or ERC721 standards."
         />
+        <meta name="robots" content="index" />
+        <link
+          rel="canonical"
+          href="https://swaplace-frontend.vercel.app/about"
+        />
       </Head>
       <ThemeContextProvider>
         <CookiesProvider>
