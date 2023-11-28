@@ -43,7 +43,7 @@ export const TheFooter = () => {
                 "text-black-200 font-onest font-normal text-[16px] leading-5",
               ])}
             >
-              Transforming tokens, empowering trade.
+              Empowering Swaps.
             </p>
           </div>
         </div>
