@@ -38,8 +38,8 @@ export const HeroSection = () => {
         </div>
         <div className="w-[600px] h-[101px] text-center text-stone-100 text-2xl font-light font-onest leading-[33.60px]">
           <h1>
-            Swaplace is a P2P DEX, ownerless, open-source, and feeless
-            environment designed for swaps between ERC20 or ERC721 standards.
+            Swaplace is a P2P DEX, ownerless, open-source, cross-chain and
+            feeless environment designed for swaps.
           </h1>
         </div>
         <div className="mt-12">

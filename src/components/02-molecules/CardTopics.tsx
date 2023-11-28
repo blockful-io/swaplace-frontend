@@ -87,10 +87,9 @@ export const CardTopics = () => {
         </div>
         <div className="col-span-2">
           <div className="xl:w-fit xl:h-full  text-justify p-medium">
-            Swaplace is a P2P DEX ownerless platform designed for ERC20 and
-            ERC721 token swaps. It allows you to exchange tokens directly,
-            eliminating the need for intermediaries and reducing transaction
-            complexities.
+            Swaplace is a P2P DEX, ownerless platform designed for token swaps.
+            It allows you to exchange tokens directly, eliminating the need for
+            intermediaries and reducing transaction complexities.
             <br />
             <br />
             You can trade one token or multiple tokens in a single click, paying
