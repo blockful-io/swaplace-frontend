@@ -29,6 +29,10 @@
     @apply font-onest text-[32px] text-stone-100 font-medium;
   }
 
+  .title-h2-medium {
+    @apply font-onest text-stone-100 text-2xl font-light  leading-[33.60px];
+  }
+
   .title-h3 {
     @apply font-onest text-xl text-stone-100 font-normal;
   }

@@ -1,27 +1,55 @@
-import { useContext } from "react";
 import cc from "classcat";
 import Lottie from "lottie-react";
 import groovyWalkAnimation from "@/components/animation/typing.json";
-import { ThemeContext } from "@/contexts/theme-config";
 import { GenericButton, ButtonVariant } from "@/components/01-atoms";
 import { blockfulDiscord, swaplaceProject } from "@/components/utils";
+import Image from "next/image";
+import { useScreenSize } from "@/hooks/useScreenSize";
 
 export const HeroSection = () => {
-  const { theme } = useContext(ThemeContext);
+  const { isMobile } = useScreenSize();
+
+  const enum heroBg {
+    DESKTOP = "/home-hero-bg.png",
+    MOBILE = "/home-hero-mobile-bg.png",
+  }
 
   return (
     <section
       className={cc(["w-full flex flex-col items-center h-[640px] mt-20"])}
     >
       <div
-        style={{
-          background: "url('/home-hero-bg.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "top left",
-        }}
-        className="w-full h-full flex items-center flex-col justify-center"
+        className={cc([
+          "w-full h-full flex items-center flex-col justify-center",
+        ])}
       >
-        <div>
+        {isMobile ? (
+          <Image
+            alt="Hero Background"
+            src={heroBg.MOBILE}
+            fill={true}
+            quality={100}
+            style={{
+              objectFit: "cover",
+              backgroundPosition: "top left",
+              backgroundSize: "cover",
+            }}
+          />
+        ) : (
+          <Image
+            alt="Hero Background"
+            src={heroBg.DESKTOP}
+            fill={true}
+            quality={100}
+            style={{
+              objectFit: "cover",
+              backgroundPosition: "top left",
+              backgroundSize: "cover",
+            }}
+          />
+        )}
+
+        <div className="w-[327px] md:w-fit">
           <Lottie
             animationData={groovyWalkAnimation}
             loop={true}
@@ -36,29 +64,33 @@ export const HeroSection = () => {
             }}
           />
         </div>
-        <div className="w-[600px] h-[101px] text-center text-stone-100 text-2xl font-light font-onest leading-[33.60px]">
+        <div className="w-[327px] h-[101px] p-medium md:w-[600px] md:h-[101px] text-center md:title-h2-medium">
           <h1>
             Swaplace is a P2P DEX, Ownerless, Open-source, Cross-chain and
             Feeless environment designed for swaps.
           </h1>
         </div>
-        <div className="mt-12">
-          <GenericButton
-            onClick={() => {
-              window.open(blockfulDiscord, "_blank");
-            }}
-            label="Meet Swaplace"
-            aditionalStyle="mx-5 w-[205px] button-medium"
-            variant={ButtonVariant.ALTERNATIVE}
-          />
-          <GenericButton
-            label={"Start now"}
-            variant={ButtonVariant.DEFAULT}
-            aditionalStyle={"w-[200px] h-[50px] px-5 py-2 button-medium"}
-            onClick={() => {
-              window.open(swaplaceProject, "_blank");
-            }}
-          />
+        <div className="md:mt-12 w-[327px] h-[108px] gap-3 flex flex-col justify-center items-center md:flex-row md:gap-0">
+          <div className="flex">
+            <GenericButton
+              onClick={() => {
+                window.open(blockfulDiscord, "_blank");
+              }}
+              label="Meet Swaplace"
+              aditionalStyle="mx-5 w-[205px] button-medium"
+              variant={ButtonVariant.ALTERNATIVE}
+            />
+          </div>
+          <div className="flex">
+            <GenericButton
+              label={"Start now"}
+              variant={ButtonVariant.DEFAULT}
+              aditionalStyle={"w-[200px] h-[50px] px-5 py-2 button-medium"}
+              onClick={() => {
+                window.open(swaplaceProject, "_blank");
+              }}
+            />
+          </div>
         </div>
       </div>
     </section>

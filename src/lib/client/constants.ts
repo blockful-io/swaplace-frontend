@@ -6,6 +6,10 @@ export enum Theme {
 export const DEFAULT_THEME = Theme.Dark;
 export const THEME_COOKIE_KEY = "swaplace_theme";
 
+export const WIDE_SCREEN_SIZE = 1279;
+export const DESKTOP_SCREEN_SIZE = 1023;
+export const TABLET_SCREEN_SIZE = 768;
+
 interface ThemeConfig {
   // Create a configuration for making these options available
   // to be used in the JSX definition by UI components across the app,
