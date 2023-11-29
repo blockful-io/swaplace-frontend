@@ -40,7 +40,7 @@ export const CardAbout = () => {
               }}
             />
             <CTAButton
-              label="What is Swaplace"
+              label="What is Swaplace?"
               variant={ButtonCTAVariant.VARIANT}
               onClick={() => {
                 const aboutAnchorSection = document.getElementById(
