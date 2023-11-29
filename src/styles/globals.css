@@ -53,6 +53,10 @@
   }
 
   .p-small {
+    @apply font-onest text-[16px] text-terciaryColored font-normal leading-[20px];
+  }
+
+  .p-small {
     @apply font-onest text-sm text-stone-100 font-normal leading-tight;
   }
 

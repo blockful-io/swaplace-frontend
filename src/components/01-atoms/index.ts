@@ -1,7 +1,9 @@
 export * from "./Arrow";
 export * from "./ArrowCTA";
 export * from "./BlockfulLogo";
+export * from "./BurgerMenu";
 export * from "./Card";
+export * from "./CloseIcon";
 export * from "./CTAButton";
 export * from "./DiscordLogo";
 export * from "./GenericButton";
@@ -10,5 +12,7 @@ export * from "./LinkedinLogo";
 export * from "./LoadingIndicator";
 export * from "./MediumLogo";
 export * from "./SwaplaceLogo";
+export * from "./SwaplaceLogoIcon";
+export * from "./SwaplaceLogoMin";
 export * from "./TelegramLogo";
 export * from "./TwitterLogo";
