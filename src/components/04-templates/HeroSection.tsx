@@ -70,17 +70,7 @@ export const HeroSection = () => {
             Feeless environment designed for swaps.
           </h1>
         </div>
-        <div className="md:mt-12 w-[327px] h-[108px] gap-3 flex flex-col justify-center items-center md:flex-row md:gap-0">
-          <div className="flex">
-            <GenericButton
-              onClick={() => {
-                window.open(blockfulDiscord, "_blank");
-              }}
-              label="Meet Swaplace"
-              aditionalStyle="mx-5 w-[205px] button-medium"
-              variant={ButtonVariant.ALTERNATIVE}
-            />
-          </div>
+        <div className="md:mt-12 w-[327px] h-[108px] gap-3 flex flex-col justify-center items-center md:flex-row-reverse md:gap-0">
           <div className="flex">
             <GenericButton
               label={"Start now"}
@@ -89,6 +79,16 @@ export const HeroSection = () => {
               onClick={() => {
                 window.open(swaplaceProject, "_blank");
               }}
+            />
+          </div>
+          <div className="flex">
+            <GenericButton
+              onClick={() => {
+                window.open(blockfulDiscord, "_blank");
+              }}
+              label="Meet Swaplace"
+              aditionalStyle="mx-5 w-[205px] button-medium"
+              variant={ButtonVariant.ALTERNATIVE}
             />
           </div>
         </div>
