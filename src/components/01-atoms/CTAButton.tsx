@@ -22,7 +22,7 @@ const ButtonCTAVariantsConfigs: Record<ButtonCTAVariant, ButtonVariantConfig> =
     },
     [ButtonCTAVariant.VARIANT]: {
       style:
-        "w-[268px] h-[84px] py-4  px-5 bg-emerald-950 rounded-[12px] justify-center items-start gap-6 inline-flex relative",
+        "w-[268px] h-[84px] py-4  px-5 bg-emerald-950 rounded-[12px] justify-center items-start gap-6 inline-flex relative items-center",
       arrowColorInHex: "#FFFFFF",
     },
   };
