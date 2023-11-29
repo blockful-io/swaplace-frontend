@@ -48,7 +48,7 @@ export const HeroSection = () => {
               window.open(blockfulDiscord, "_blank");
             }}
             label="Meet Swaplace"
-            aditionalStyle="mx-5 button-medium w-[205px]"
+            aditionalStyle="mx-5 w-[205px] button-medium"
             variant={ButtonVariant.ALTERNATIVE}
           />
           <GenericButton

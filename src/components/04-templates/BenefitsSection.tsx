@@ -35,9 +35,7 @@ export const BenefitsSection = () => {
           <GenericButton
             label={"Build now"}
             variant={ButtonVariant.DEFAULT}
-            aditionalStyle={
-              "w-[200px] h-[50px] px-5 py-2 font-onest font-semibold text-[18px] leading-[23px]; "
-            }
+            aditionalStyle={"w-[200px] h-[50px] px-5 py-2 button-medium"}
             onClick={() => {
               window.open(swaplaceContracts, "_blank");
             }}

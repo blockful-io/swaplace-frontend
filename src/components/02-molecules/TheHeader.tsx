@@ -79,6 +79,7 @@ export const TheHeader = () => {
           onClick={() => {
             window.open(blockfulContact, "_blank");
           }}
+          aditionalStyle="button-small"
         />
       </div>
     </header>
