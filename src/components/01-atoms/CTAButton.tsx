@@ -1,6 +1,6 @@
-import React, { ButtonHTMLAttributes } from "react";
+import React, { ButtonHTMLAttributes, useState } from "react";
 import cc from "classcat";
-import { ArrowCTA, LoadingIndicator } from "@/components/01-atoms";
+import { ArrowCTA, LoadingIndicator, arrowColor } from "@/components/01-atoms";
 
 export enum ButtonCTAVariant {
   DEFAULT,
@@ -45,12 +45,20 @@ export function CTAButton<T>({
   isLoading = false,
   ...props
 }: Props<T>) {
+  const [isGroupHovered, setIsGroupHovered] = useState(false);
+
   return (
     <button
       onClick={onClick}
+      onMouseEnter={() => {
+        setIsGroupHovered(true);
+      }}
+      onMouseLeave={() => {
+        setIsGroupHovered(false);
+      }}
       className={cc([
         ButtonCTAVariantsConfigs[variant].style,
-        "group flex flex-row hover:bg-[#DDF23D] hover:text-stone-100 items-center",
+        "group flex flex-row hover:bg-button-default",
         aditionalStyle,
       ])}
       {...props}
@@ -66,11 +74,18 @@ export function CTAButton<T>({
       </div>
 
       <div className="flex items-center justify-center">
-        <div className="w-[52px] h-[52px] p-5 bg-white bg-opacity-10 rounded-[100px] flex items-center justify-center gap-2.5">
+        <div
+          className={cc([
+            "w-[52px] h-[52px] p-5 bg-white bg-opacity-10 rounded-[100px] flex items-center justify-center gap-2.5 group-hover:bg-[#c6de3b]",
+          ])}
+        >
+          {" "}
           <div
             className={cc(["w-5 h-5 relative origin-top-left -rotate-45"])}
           />
-          <ArrowCTA color={ButtonCTAVariantsConfigs[variant].arrowColorInHex} />
+          <ArrowCTA
+            color={isGroupHovered ? arrowColor.BLACK : arrowColor.WHITE}
+          />
         </div>
       </div>
 
