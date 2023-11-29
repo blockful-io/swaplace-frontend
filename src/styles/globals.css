@@ -32,6 +32,9 @@
   .title-h3 {
     @apply font-onest text-xl text-stone-100 font-normal;
   }
+  .button-medium-white {
+    @apply text-white font-onest font-semibold text-[18px] leading-[23px];
+  }
 
   .button-medium {
     @apply font-onest font-semibold text-[18px] leading-[23px];

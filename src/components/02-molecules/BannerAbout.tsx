@@ -1,6 +1,10 @@
 import React from "react";
 import cc from "classcat";
-import { ButtonVariant, GenericButton } from "@/components/01-atoms";
+import {
+  ButtonVariant,
+  GenericButton,
+  arrowColor,
+} from "@/components/01-atoms";
 import { blockfulContact } from "@/components/utils";
 
 export const BannerAbout = () => {
@@ -24,8 +28,8 @@ export const BannerAbout = () => {
             onClick={() => {
               window.open(blockfulContact, "_blank");
             }}
-            variant={ButtonVariant.DEFAULT}
-            aditionalStyle="w-[200px] h-[56px] bg-primaryColored text-white font-onest font-semibold text-[18px] leading-[23px]"
+            variant={ButtonVariant.DEFAULT_WHITE}
+            aditionalStyle="w-[200px] h-[56px] bg-primaryColored button-medium-white"
           ></GenericButton>
         </div>
       </div>
