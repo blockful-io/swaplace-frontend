@@ -25,19 +25,21 @@ export const CardTopics = () => {
           "xl:w-[1216px] xl:h-fit grid grid-cols-3 gap-2 border-b border-[#10584C] py-11",
         ])}
       >
-        <div className="xl:w-[394px] xl:h-[124px] ">
-          <div className="mb-5">
-            <Image
-              alt="About Illustration 1"
-              src={aboutIllustration}
-              quality={100}
-              style={{
-                objectFit: "cover",
-              }}
-            />
-          </div>
-          <div className="xl:w-[292px]">
-            <h1 className="title-h2-medium ">Manifesto</h1>
+        <div className="flex items-center justify-center">
+          <div className="mb-5 items-start">
+            <div className="mb-5">
+              <Image
+                alt="About Illustration 1"
+                src={aboutIllustration}
+                quality={100}
+                style={{
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            <div className="xl:w-[292px]">
+              <h1 className="title-h2-medium ">Manifesto</h1>
+            </div>
           </div>
         </div>
         <div className="col-span-2">
@@ -70,19 +72,21 @@ export const CardTopics = () => {
           "xl:w-[1216px] xl:h-fit grid grid-cols-3 gap-2 border-b border-[#10584C] py-11",
         ])}
       >
-        <div className="xl:w-[394px] xl:h-[124px]  ">
-          <div className="mb-5">
-            <Image
-              alt="About Illustration 2"
-              src={aboutIllustration2}
-              quality={100}
-              style={{
-                objectFit: "cover",
-              }}
-            />
-          </div>
-          <div className="xl:w-[292px]">
-            <h1 className="title-h2-medium ">What is Swaplace?</h1>
+        <div className="flex items-center justify-center">
+          <div className="mb-5 items-start ">
+            <div className="mb-5 ">
+              <Image
+                alt="About Illustration 2"
+                src={aboutIllustration2}
+                quality={100}
+                style={{
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            <div className="xl:w-[292px]">
+              <h1 className="title-h2-medium ">What is Swaplace?</h1>
+            </div>
           </div>
         </div>
         <div className="col-span-2">
@@ -107,19 +111,21 @@ export const CardTopics = () => {
           "xl:w-[1216px] xl:h-fit grid grid-cols-3 gap-2 border-b border-[#10584C] py-11",
         ])}
       >
-        <div className="xl:w-[394px] xl:h-[124px]  ">
-          <div className="mb-5">
-            <Image
-              alt="About Illustration3"
-              src={aboutIllustration3}
-              quality={100}
-              style={{
-                objectFit: "cover",
-              }}
-            />
-          </div>
-          <div className="xl:w-[292px]">
-            <h1 className="title-h2-medium ">The Team</h1>
+        <div className="flex flex-col items-center justify-center">
+          <div className="mb-5 items-start ">
+            <div className="mb-5">
+              <Image
+                alt="About Illustration3"
+                src={aboutIllustration3}
+                quality={100}
+                style={{
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            <div className="xl:w-[292px]">
+              <h1 className="title-h2-medium ">The Team</h1>
+            </div>
           </div>
         </div>
         <div className="col-span-2">
@@ -147,19 +153,21 @@ export const CardTopics = () => {
         id={howToBuildSectionId}
         className={cc(["xl:w-[1216px] xl:h-fit grid grid-cols-3 gap-2 py-11"])}
       >
-        <div className="xl:w-[394px] xl:h-[124px]  ">
-          <div className="mb-5">
-            <Image
-              alt="About Illustration 4"
-              src={aboutIllustration4}
-              quality={100}
-              style={{
-                objectFit: "cover",
-              }}
-            />
-          </div>
-          <div className="xl:w-[292px]">
-            <h1 className="title-h2-medium ">How to build</h1>
+        <div className="flex-col items-center justify-center flex">
+          <div className="mb-5 items-start">
+            <div className="mb-5">
+              <Image
+                alt="About Illustration 4"
+                src={aboutIllustration4}
+                quality={100}
+                style={{
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            <div className="xl:w-[292px]">
+              <h1 className="title-h2-medium ">How to build</h1>
+            </div>
           </div>
         </div>
 

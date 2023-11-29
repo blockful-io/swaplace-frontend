@@ -1,10 +1,6 @@
 import React from "react";
 import cc from "classcat";
-import {
-  ButtonVariant,
-  GenericButton,
-  arrowColor,
-} from "@/components/01-atoms";
+import { ButtonVariant, GenericButton } from "@/components/01-atoms";
 import { blockfulContact } from "@/components/utils";
 
 export const BannerAbout = () => {
