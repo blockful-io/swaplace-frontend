@@ -22,7 +22,7 @@ export default function MyApp({
         <link rel="icon" href="/images/favicon.png" />
         <meta
           name="description"
-          content="Swaplace is a P2P DEX, ownerless, open-source, cross-chain and feeless environment designed for swaps."
+          content="Swaplace is a P2P DEX, Ownerless, Open-source, Cross-chain and Feeless environment designed for swaps."
         />
         <meta name="robots" content="index" />
         <link

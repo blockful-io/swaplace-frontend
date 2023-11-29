@@ -10,8 +10,8 @@ export const CardBenefits = () => {
     <>
       <div className="grid xl:grid-cols-4  lg:grid-cols-2 my-12 gap-4 md:grid-cols-2	 ">
         <Card
-          title={"Fair fees"}
-          label={"No high fees like the ones that are charged by marketplaces."}
+          title={"Feeless"}
+          label={"No platform fees, you can enjoy your swaps."}
           img={BenefitsIllustration1}
         />
         <Card
