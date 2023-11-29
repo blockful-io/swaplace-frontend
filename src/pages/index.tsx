@@ -1,7 +1,5 @@
-import { useContext } from "react";
 import cc from "classcat";
 import { NextPage } from "next";
-import { ThemeContext } from "@/contexts/theme-config";
 import { TheLayout } from "@/components/03-organisms/TheLayout";
 import {
   HeroSection,
@@ -10,8 +8,6 @@ import {
 } from "@/components/04-templates";
 
 const IndexPage: NextPage = () => {
-  const { theme } = useContext(ThemeContext);
-
   return (
     <div
       className={cc([
