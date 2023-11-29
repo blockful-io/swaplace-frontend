@@ -9,8 +9,4 @@
   <loc>https://swaplace-frontend.vercel.app/about</loc>
   <priority>0.70</priority>
 </url>
-<url>
-  <loc>https://swaplace-frontend.vercel.app/ecosystem</loc>
-  <priority>0.70</priority>
-</url>
 </urlset>
