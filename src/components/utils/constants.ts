@@ -1,7 +1,3 @@
-import { LogoProjectArbitrum } from "../01-atoms/LogoProjectArbitrum";
-import { LogoProjectNova } from "../01-atoms/LogoProjectNova";
-import { DiscordLogo } from "../01-atoms/DiscordLogo";
-
 /*Blockful Constants*/
 export const blockfulTwitter = "https://twitter.com/blockful_io";
 export const blockfulDiscord = "https://discord.gg/B6uDmm7hvC";
@@ -26,30 +22,3 @@ export const manifestoSectionId = "manifestoSection";
 export const whatIsSwaplaceSectionId = "whatIsSwaplaceSection";
 export const theTeamSectionId = "theTeamSection";
 export const howToBuildSectionId = "howToBuildSection";
-
-export enum PossibleAppNetwork {
-  Arbitrum,
-  Nova,
-}
-
-export const networkImages: Record<PossibleAppNetwork, JSX.Element> = {
-  [PossibleAppNetwork.Arbitrum]: LogoProjectArbitrum(),
-  [PossibleAppNetwork.Nova]: LogoProjectNova(),
-};
-
-export interface ICardProject {
-  title: string;
-  description: string;
-  icon: JSX.Element;
-  networks: Array<PossibleAppNetwork>;
-}
-
-/*Example possibleAppNetworks*/
-export const ObjCardProject: ICardProject[] = [
-  {
-    title: "Title",
-    description: "Description",
-    icon: DiscordLogo(),
-    networks: [PossibleAppNetwork.Arbitrum, PossibleAppNetwork.Nova],
-  },
-];
