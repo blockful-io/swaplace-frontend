@@ -90,7 +90,7 @@ export const TheHeader = () => {
 
       <div className="flex items-center justify-between">
         <div className="flex items-center justify-start">
-          <button className="lg:hidden inline-block">
+          <button className="lg:hidden inline-block" aria-label="Swaplace Logo">
             <SwaplaceLogoMin />
           </button>
         </div>
@@ -100,6 +100,7 @@ export const TheHeader = () => {
             onClick={() => {
               setMenuOpen(!menuOpen);
             }}
+            aria-label="Header Mobile Menu"
           >
             <BurgerMenu />
           </button>
