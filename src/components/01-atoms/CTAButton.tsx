@@ -22,7 +22,7 @@ const ButtonCTAVariantsConfigs: Record<ButtonCTAVariant, ButtonVariantConfig> =
     },
     [ButtonCTAVariant.VARIANT]: {
       style:
-        "w-[268px] h-[84px] py-4  px-5 bg-emerald-950 rounded-[12px] justify-center items-start gap-6 inline-flex relative",
+        "w-[327px] h-[72px] px-4 gap-2 md:w-[268px] md:h-[84px] md:py-4 md:px-5 md:gap-6  bg-primaryColored rounded-[12px] justify-center items-start inline-flex relative items-center",
       arrowColorInHex: "#FFFFFF",
     },
   };
@@ -58,13 +58,13 @@ export function CTAButton<T>({
       }}
       className={cc([
         ButtonCTAVariantsConfigs[variant].style,
-        "group flex flex-row hover:bg-button-default",
+        "group flex flex-row hover:bg-button-default justify-between",
         aditionalStyle,
       ])}
       {...props}
       disabled={isLoading}
     >
-      <div className="text-left space-y-1 flex-col">
+      <div className="text-left items-center  justify-start">
         <div className="button-big-mobile md:button-big group-hover:text-black-500">
           {label}
         </div>
@@ -73,10 +73,10 @@ export function CTAButton<T>({
         </div>
       </div>
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center ">
         <div
           className={cc([
-            "w-[52px] h-[52px] p-5 bg-white bg-opacity-10 rounded-[100px] flex items-center justify-center gap-2.5 group-hover:bg-[#c6de3b]",
+            "w-[40px] h-[40px] md:w-[52px] md:h-[52px] p-5 bg-white bg-opacity-10 rounded-[100px] flex items-center justify-center gap-2.5 group-hover:bg-[#c6de3b]",
           ])}
         >
           {" "}

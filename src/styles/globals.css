@@ -25,6 +25,10 @@
     @apply font-onest text-stone-100 text-2xl font-light  leading-[33.60px];
   }
 
+  .title-h2-normal-mobile {
+    @apply font-onest text-[32px] text-terciaryColored font-medium leading-[40.8px];
+  }
+
   .title-h2-normal {
     @apply font-onest text-[32px] font-normal leading-10 text-terciaryColored;
   }
@@ -53,7 +57,7 @@
   }
 
   .button-big-mobile {
-    @apply text-terciaryColored text-[18px] font-medium font-onest leading-tight;
+    @apply text-terciaryColored text-[18px] font-medium font-onest leading-[20px];
   }
 
   .button-big-mobile-2 {
