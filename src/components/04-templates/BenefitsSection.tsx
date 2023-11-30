@@ -7,40 +7,31 @@ export const BenefitsSection = () => {
   return (
     <section
       className={cc([
-        "flex h-full flex-col items-center pt-[100px] px-8 gap-12 ",
+        "flex h-full flex-col items-center md:py-[100px] px-8 gap-12 ",
       ])}
-      style={{
-        backgroundImage: "url('/home-know-more.png')",
-        backgroundSize: "contain",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "top",
-      }}
     >
-      <div className="h-full w-[300px]"></div>
-      <div className="md:h-[774px] w-full flex items-center flex-col space-x-4 justify-center h-full md:mb-20">
-        <div className="lg:w-[807px] text-center align-middle	title-h2-normal md:w-[600px]">
-          <h1>
-            With Swaplace, you can
-            <span className="text-secondaryColored">
-              {" "}
-              create products <br />
-            </span>{" "}
-            that solve significant issues in the ecosystem
-          </h1>
-        </div>
-        <div className="my-12">
-          <CardBenefits />
-        </div>
-        <div>
-          <GenericButton
-            label={"Build now"}
-            variant={ButtonVariant.DEFAULT}
-            aditionalStyle={"w-[200px] h-[50px] px-5 py-2 button-medium"}
-            onClick={() => {
-              window.open(swaplaceContracts, "_blank");
-            }}
-          />
-        </div>
+      <div className="md:w-[600px] md:h-full lg:w-[807px] text-center md:title-h2-normal title-h2-small h-[124px] w-[327px] flex justify-center items-center ">
+        <h1>
+          With Swaplace, you can
+          <span className="text-secondaryColored">
+            {" "}
+            create products <br />
+          </span>{" "}
+          that solve significant issues in the ecosystem
+        </h1>
+      </div>
+      <div className=" flex justify-center items-center ">
+        <CardBenefits />
+      </div>
+      <div className="flex md:mb-0 mb-20">
+        <GenericButton
+          label={"Build now"}
+          variant={ButtonVariant.DEFAULT}
+          aditionalStyle={"w-[200px] h-[50px] px-5 py-2 button-medium"}
+          onClick={() => {
+            window.open(swaplaceContracts, "_blank");
+          }}
+        />
       </div>
     </section>
   );
