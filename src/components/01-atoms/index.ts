@@ -1,4 +1,6 @@
 export * from "./Arrow";
+export * from "./ArrowDown";
+export * from "./ArrowUp";
 export * from "./ArrowCTA";
 export * from "./BlockfulLogo";
 export * from "./BurgerMenu";
