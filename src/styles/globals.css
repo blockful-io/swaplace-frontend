@@ -40,6 +40,22 @@
     @apply text-white font-onest font-semibold text-[18px] leading-[23px];
   }
 
+  .button-big {
+    @apply text-stone-100 text-2xl font-normal font-onest;
+  }
+
+  .button-big-2 {
+    @apply text-neutral-400 text-base font-normal font-onest leading-tight;
+  }
+
+  .button-big-mobile {
+    @apply text-terciaryColored text-[18px] font-medium font-onest leading-tight;
+  }
+
+  .button-big-mobile-2 {
+    @apply font-onest text-black-200 text-[14px] font-normal leading-[20px];
+  }
+
   .button-medium {
     @apply font-onest font-semibold text-[18px] leading-[23px];
   }

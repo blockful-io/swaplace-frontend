@@ -17,12 +17,12 @@ const ButtonCTAVariantsConfigs: Record<ButtonCTAVariant, ButtonVariantConfig> =
   {
     [ButtonCTAVariant.DEFAULT]: {
       style:
-        "w-[394.67px] h-[123px] p-6 bg-emerald-950 rounded-[20px] justify-center items-start gap-6 inline-flex relative",
+        "w-[327px] h-[96px] p-4 md:w-[394.67px] md:h-[123px] md:p-6 bg-emerald-950 rounded-[20px] justify-center items-start gap-6 inline-flex relative",
       arrowColorInHex: "#FFFFFF",
     },
     [ButtonCTAVariant.VARIANT]: {
       style:
-        "w-[268px] h-[84px] py-4  px-5 bg-emerald-950 rounded-[12px] justify-center items-start gap-6 inline-flex relative items-center",
+        "w-[268px] h-[84px] py-4  px-5 bg-emerald-950 rounded-[12px] justify-center items-start gap-6 inline-flex relative",
       arrowColorInHex: "#FFFFFF",
     },
   };
@@ -65,10 +65,10 @@ export function CTAButton<T>({
       disabled={isLoading}
     >
       <div className="text-left space-y-1 flex-col">
-        <div className="text-stone-100 text-2xl font-normal font-onest group-hover:text-black-500">
+        <div className="button-big-mobile md:button-big group-hover:text-black-500">
           {label}
         </div>
-        <div className="text-neutral-400 text-base font-normal font-onest leading-tight group-hover:text-black-500">
+        <div className="button-big-mobile-2 md:button-big-2  group-hover:text-black-500">
           {description}
         </div>
       </div>

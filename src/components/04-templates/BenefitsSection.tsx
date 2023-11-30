@@ -17,7 +17,7 @@ export const BenefitsSection = () => {
       }}
     >
       <div className="h-full w-[300px]"></div>
-      <div className="h-[774px] w-full flex items-center flex-col space-x-4 justify-center md:h-full md:mb-20">
+      <div className="md:h-[774px] w-full flex items-center flex-col space-x-4 justify-center h-full md:mb-20">
         <div className="lg:w-[807px] text-center align-middle	title-h2-normal md:w-[600px]">
           <h1>
             With Swaplace, you can
