@@ -6,11 +6,13 @@ export const AboutSection = () => {
   return (
     <section
       className={cc([
-        "w-full flex flex-col items-center h-full xl:mt-32 lg:mt-40 md:mt-60 mb-8 px-8",
+        "w-full flex flex-col items-center h-full xl:mt-32 lg:mt-40 md:mt-60 md:mb-8 md:px-8",
       ])}
     >
-      <div className="w-full h-full flex items-center flex-col justify-center">
+      <div className="w-full h-[549px] md:h-full flex items-center flex-col justify-center">
         <CardAbout />
+      </div>
+      <div className="flex">
         <CardTopics />
       </div>
     </section>

@@ -90,9 +90,13 @@ export const TheHeader = () => {
 
       <div className="flex items-center justify-between">
         <div className="flex items-center justify-start">
-          <button className="lg:hidden inline-block" aria-label="Swaplace Logo">
+          <Link
+            className="lg:hidden inline-block"
+            aria-label="Swaplace Logo"
+            href={"/"}
+          >
             <SwaplaceLogoMin />
-          </button>
+          </Link>
         </div>
         <div className="flex items-center justify-end ">
           <button
