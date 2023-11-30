@@ -204,7 +204,7 @@ export const CardTopics = () => {
                   setShowText(!showText);
                 }}
                 className={
-                  "hover:text-transparent inline-flex justify-center items-center gap-2 transition-height duration-1000 ease-in-out delay-300	 hover:opacity-25 "
+                  "hover:text-transparent inline-flex justify-center items-center gap-2 hover:opacity-25 "
                 }
               >
                 <p className="text-secondaryColored ">Read More</p>
@@ -281,7 +281,7 @@ export const CardTopics = () => {
                   setShowText(!showText);
                 }}
                 className={
-                  "hover:text-transparent inline-flex justify-center items-center gap-2 hover:opacity-25 scroll-smooth"
+                  "hover:text-transparent inline-flex justify-center items-center gap-2 hover:opacity-25 "
                 }
               >
                 <p className="text-secondaryColored ">Read More</p>
