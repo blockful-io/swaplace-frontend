@@ -21,6 +21,10 @@
     @apply font-onest text-[40px] text-primaryColored font-medium leading-[51px];
   }
 
+  .title-h2-medium {
+    @apply font-onest text-stone-100 text-2xl font-light  leading-[33.60px];
+  }
+
   .title-h2-normal {
     @apply font-onest text-[32px] font-normal leading-10 text-terciaryColored;
   }
@@ -29,8 +33,8 @@
     @apply font-onest text-[32px] text-stone-100 font-medium;
   }
 
-  .title-h2-medium {
-    @apply font-onest text-stone-100 text-2xl font-light  leading-[33.60px];
+  .title-h2-small {
+    @apply font-onest text-[24px] text-terciaryColored font-medium leading-[30.6px];
   }
 
   .title-h3 {
@@ -62,6 +66,22 @@
 
   .button-small {
     @apply font-onest font-medium text-[14px] leading-4;
+  }
+
+  .card-normal-title {
+    @apply text-stone-100 text-2xl font-medium font-onest;
+  }
+
+  .card-mobile-title {
+    @apply text-terciaryColored font-onest font-medium text-[20px] leading-[25.5px];
+  }
+
+  .card-normal-label {
+    @apply text-neutral-400 text-lg font-normal font-onest leading-normal;
+  }
+
+  .card-mobile-label {
+    @apply font-onest text-[16px] text-black-200 font-normal leading-[20px];
   }
 
   .p-medium {
