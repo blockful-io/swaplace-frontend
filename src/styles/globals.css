@@ -25,6 +25,10 @@
     @apply font-onest text-stone-100 text-2xl font-light  leading-[33.60px];
   }
 
+  .title-h2-medium-mobile {
+    @apply font-onest text-terciaryColored text-[24px] font-semibold leading-[28.8px];
+  }
+
   .title-h2-normal-mobile {
     @apply font-onest text-[32px] text-terciaryColored font-medium leading-[40.8px];
   }
@@ -85,6 +89,10 @@
   }
 
   .card-mobile-label {
+    @apply font-onest text-[16px] text-black-200 font-normal leading-[20px];
+  }
+
+  .title-h3-medium-mobile {
     @apply font-onest text-[16px] text-black-200 font-normal leading-[20px];
   }
 

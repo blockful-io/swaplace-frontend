@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import cc from "classcat";
 import Image from "next/image";
 import aboutIllustration from "public/AboutIllustration1.svg";
@@ -15,14 +15,19 @@ import {
   theTeamSectionId,
   whatIsSwaplaceSectionId,
 } from "@/components/utils";
+import { useScreenSize } from "@/hooks/useScreenSize";
+import { ArrowDown, ArrowUp } from "@/components/01-atoms/";
 
 export const CardTopics = () => {
+  const [showText, setShowText] = useState(false);
+  const { isMobile } = useScreenSize();
+
   return (
-    <div className="xl:h-[1402px] border-t my-11 mx-8 border-[#10584C] ">
+    <div className=" flex-col xl:h-[1402px] md:border-t md:my-11 md:mx-8 md:border-[#10584C] ">
       <div
         id={manifestoSectionId}
         className={cc([
-          "xl:w-[1216px] xl:h-fit grid grid-cols-3 gap-2 border-b border-[#10584C] py-11",
+          "py-10 gap-4 xl:w-[1216px] xl:h-fit grid md:grid-cols-3 md:gap-2 border-b border-[#10584C] md:py-11 grid-rows-1 ",
         ])}
       >
         <div className="flex items-center justify-center">
@@ -38,12 +43,18 @@ export const CardTopics = () => {
               />
             </div>
             <div className="xl:w-[292px]">
-              <h1 className="title-h2-medium ">Manifesto</h1>
+              <h1 className="md:title-h2-medium  title-h2-medium-mobile ">
+                Manifesto
+              </h1>
             </div>
           </div>
         </div>
         <div className="col-span-2">
-          <div className="xl:w-fit xl:h-full  text-justify p-medium">
+          <div
+            className={`md:w-fit md:h-full w-[327px] h-[200px] text-justify md:p-medium title-h3-medium-mobile overflow-hidden ${
+              showText ? "h-fit" : "max-h-full line-clamp-none"
+            }`}
+          >
             With Swaplace, we believe in a decentralized future where
             peer-to-peer exchanges are seamless, open-source, ownerless and
             feeless.
@@ -63,13 +74,26 @@ export const CardTopics = () => {
             allowances, ensuring a transparent and accessible environment for
             all.
           </div>
+          {isMobile && (
+            <button
+              onClick={() => {
+                setShowText(!showText);
+              }}
+              className={
+                "hover:text-transparent inline-flex justify-center items-center gap-2 hover:opacity-25"
+              }
+            >
+              <p className="text-secondaryColored">Read More</p>
+              {showText ? <ArrowUp /> : <ArrowDown />}
+            </button>
+          )}
         </div>
       </div>
 
       <div
         id={whatIsSwaplaceSectionId}
         className={cc([
-          "xl:w-[1216px] xl:h-fit grid grid-cols-3 gap-2 border-b border-[#10584C] py-11",
+          "py-10 gap-4 xl:w-[1216px] xl:h-fit grid md:grid-cols-3 md:gap-2 border-b border-[#10584C] md:py-11 grid-rows-1 ",
         ])}
       >
         <div className="flex items-center justify-center">
@@ -85,12 +109,18 @@ export const CardTopics = () => {
               />
             </div>
             <div className="xl:w-[292px]">
-              <h1 className="title-h2-medium ">What is Swaplace?</h1>
+              <h1 className="md:title-h2-medium  title-h2-medium-mobile ">
+                What is Swaplace?
+              </h1>
             </div>
           </div>
         </div>
         <div className="col-span-2">
-          <div className="xl:w-fit xl:h-full  text-justify p-medium">
+          <div
+            className={`md:w-fit md:h-full w-[327px] h-[200px] text-justify md:p-medium title-h3-medium-mobile overflow-hidden ${
+              showText ? "h-fit" : "max-h-full line-clamp-none"
+            }`}
+          >
             Swaplace is a P2P DEX, Ownerless platform designed for token swaps.
             It allows you to exchange tokens directly, eliminating the need for
             intermediaries and reducing transaction complexities.
@@ -102,13 +132,28 @@ export const CardTopics = () => {
             putting you in control of your transactions. We've simplified the
             process, making it efficient, straightforward, and user-friendly.
           </div>
+          <div className="pt-2">
+            {isMobile && (
+              <button
+                onClick={() => {
+                  setShowText(!showText);
+                }}
+                className={
+                  "hover:text-transparent inline-flex justify-center items-center gap-2 hover:opacity-25"
+                }
+              >
+                <p className="text-secondaryColored">Read More</p>
+                {showText ? <ArrowUp /> : <ArrowDown />}
+              </button>
+            )}
+          </div>
         </div>
       </div>
 
       <div
         id={theTeamSectionId}
         className={cc([
-          "xl:w-[1216px] xl:h-fit grid grid-cols-3 gap-2 border-b border-[#10584C] py-11",
+          "py-10 gap-4 xl:w-[1216px] xl:h-fit grid md:grid-cols-3 md:gap-2 border-b border-[#10584C] md:py-11 grid-rows-1 ",
         ])}
       >
         <div className="flex flex-col items-center justify-center">
@@ -124,12 +169,18 @@ export const CardTopics = () => {
               />
             </div>
             <div className="xl:w-[292px]">
-              <h1 className="title-h2-medium ">The Team</h1>
+              <h1 className="md:title-h2-medium  title-h2-medium-mobile ">
+                The Team
+              </h1>
             </div>
           </div>
         </div>
         <div className="col-span-2">
-          <div className="xl:w-fit xl:h-full  text-justify p-medium">
+          <div
+            className={`md:w-fit md:h-full w-[327px] h-[200px] text-justify md:p-medium title-h3-medium-mobile overflow-hidden ${
+              showText ? "h-fit" : "max-h-full line-clamp-none"
+            }`}
+          >
             The development team is from Blockful. Our team fosters innovation
             through curiosity and learning.
             <br />
@@ -146,12 +197,29 @@ export const CardTopics = () => {
               Blockful
             </a>
           </div>
+          <div className="pt-2">
+            {isMobile && (
+              <button
+                onClick={() => {
+                  setShowText(!showText);
+                }}
+                className={
+                  "hover:text-transparent inline-flex justify-center items-center gap-2 transition-height duration-1000 ease-in-out delay-300	 hover:opacity-25 "
+                }
+              >
+                <p className="text-secondaryColored ">Read More</p>
+                {showText ? <ArrowUp /> : <ArrowDown />}
+              </button>
+            )}
+          </div>
         </div>
       </div>
 
       <div
         id={howToBuildSectionId}
-        className={cc(["xl:w-[1216px] xl:h-fit grid grid-cols-3 gap-2 py-11"])}
+        className={cc([
+          "py-10 gap-4 xl:w-[1216px] xl:h-fit grid md:grid-cols-3 md:gap-2 md:border-b md:border-[#10584C] md:py-11 grid-rows-1 ",
+        ])}
       >
         <div className="flex-col items-center justify-center flex">
           <div className="mb-5 items-start">
@@ -166,39 +234,61 @@ export const CardTopics = () => {
               />
             </div>
             <div className="xl:w-[292px]">
-              <h1 className="title-h2-medium ">How to build</h1>
+              <h1 className="md:title-h2-medium  title-h2-medium-mobile ">
+                How to build
+              </h1>
             </div>
           </div>
         </div>
 
-        <div className="xl:w-fit xl:h-full text-justify col-span-2 p-medium">
-          1. Access the Swaplace docs on{" "}
-          <a href={swaplaceContracts} target="_blank">
-            Github
-          </a>
-          <br />
-          2. There you will find everything you need to start building,
-          especially the{" "}
-          <a href={swaplaceContractsMain} target="_blank">
-            contract codes
-          </a>{" "}
-          <br />
-          3. All documentation is <span className="font-bold">
-            Open-Source
-          </span>{" "}
-          and you can use the technology to build your own product <br />
-          4. If you have any difficulties or want to ask any questions, don't
-          hesitate to access our{" "}
-          <a href={blockfulDiscord} target="_blank">
-            Discord community{" "}
-          </a>
-          to contact the devs <br />
-          5. There you will find a category for Swaplace builders, pick the
-          “Swaplace Builder” role and feel free to join our community of
-          builders
-          <br />
-          <br />
-          Welcome, builder!
+        <div className="col-span-2">
+          <div
+            className={`md:w-fit md:h-full w-[327px] h-[200px] text-justify md:p-medium title-h3-medium-mobile overflow-hidden ${
+              showText ? "h-fit" : "max-h-full line-clamp-none"
+            }`}
+          >
+            1. Access the Swaplace docs on{" "}
+            <a href={swaplaceContracts} target="_blank">
+              Github
+            </a>
+            <br />
+            2. There you will find everything you need to start building,
+            especially the{" "}
+            <a href={swaplaceContractsMain} target="_blank">
+              contract codes
+            </a>{" "}
+            <br />
+            3. All documentation is{" "}
+            <span className="font-bold">Open-Source</span> and you can use the
+            technology to build your own product <br />
+            4. If you have any difficulties or want to ask any questions, don't
+            hesitate to access our{" "}
+            <a href={blockfulDiscord} target="_blank">
+              Discord community{" "}
+            </a>
+            to contact the devs <br />
+            5. There you will find a category for Swaplace builders, pick the
+            “Swaplace Builder” role and feel free to join our community of
+            builders
+            <br />
+            <br />
+            Welcome, builder!
+          </div>
+          <div className="pt-2">
+            {isMobile && (
+              <button
+                onClick={() => {
+                  setShowText(!showText);
+                }}
+                className={
+                  "hover:text-transparent inline-flex justify-center items-center gap-2 hover:opacity-25 scroll-smooth"
+                }
+              >
+                <p className="text-secondaryColored ">Read More</p>
+                {showText ? <ArrowUp /> : <ArrowDown />}
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>
