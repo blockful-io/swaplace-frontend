@@ -17,7 +17,7 @@ export const TheHeader = () => {
   return (
     <header
       className={cc([
-        "lg:w-full lg:h-16 lg:flex top-0 px-8 gap-8 w-[359px]  rounded-xl  items-center fixed bg-emerald-950  mt-4 mx-8 p-4 z-10 md:w-[704px]  lg:max-xl:w-[960px]  xl:max-2xl:w-[1376px]  2xl:w-[1500px]",
+        "lg:w-full lg:h-16 lg:flex top-0 px-8 gap-8 w-[359px]  rounded-xl  items-center fixed bg-emerald-950  mt-4 mx-8 p-4 z-10 md:w-[704px]  lg:max-xl:w-[960px]  xl:max-2xl:w-[1376px]  2xl:w-[1500px] smallmobile:w-[280px]",
       ])}
     >
       <div className="hidden lg:flex space-x-4 justify-between w-full">

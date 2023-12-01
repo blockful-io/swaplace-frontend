@@ -49,7 +49,7 @@ export const HeroSection = () => {
           />
         )}
 
-        <div className="w-[327px] md:w-fit">
+        <div className="w-[327px] md:w-fit smallmobile:w-[280px]">
           <Lottie
             animationData={groovyWalkAnimation}
             loop={true}
@@ -64,13 +64,13 @@ export const HeroSection = () => {
             }}
           />
         </div>
-        <div className="w-[327px] h-[101px] p-medium md:w-[600px] md:h-[101px] text-center md:title-h2-medium">
+        <div className="w-[327px] h-[101px] p-medium md:w-[600px] md:h-[101px] text-center md:title-h2-medium smallmobile:w-[280px]">
           <h1>
             Swaplace is a P2P DEX, Ownerless, Open-source, Cross-chain and
             Feeless environment designed for swaps.
           </h1>
         </div>
-        <div className="md:mt-12 w-[327px] h-[108px] gap-3 flex flex-col justify-center items-center md:flex-row-reverse md:gap-0">
+        <div className="md:mt-12 w-[327px] h-[108px] gap-3 flex flex-col justify-center items-center md:flex-row-reverse md:gap-0 smallmobile:w-[280px]">
           <div className="flex">
             <GenericButton
               label={"Start now"}

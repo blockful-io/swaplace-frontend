@@ -17,12 +17,12 @@ const ButtonCTAVariantsConfigs: Record<ButtonCTAVariant, ButtonVariantConfig> =
   {
     [ButtonCTAVariant.DEFAULT]: {
       style:
-        "w-[327px] h-[96px] p-4 md:w-[394.67px] md:h-[123px] md:p-6 bg-emerald-950 rounded-[20px] justify-center items-start gap-6 inline-flex relative",
+        "w-[327px] h-[96px] smallmobile:w-[280px] p-4 md:w-[394.67px] md:h-[123px] md:p-6 bg-emerald-950 rounded-[20px] justify-center items-start gap-6 inline-flex relative",
       arrowColorInHex: "#FFFFFF",
     },
     [ButtonCTAVariant.VARIANT]: {
       style:
-        "w-[327px] h-[72px] px-4 gap-2 md:w-[268px] md:h-[84px] md:py-4 md:px-5 md:gap-6  bg-primaryColored rounded-[12px] justify-center items-start inline-flex relative items-center",
+        "w-[327px] h-[72px] px-4 gap-2 smallmobile:w-[280px] md:w-[268px] md:h-[84px] md:py-4 md:px-5 md:gap-6  bg-primaryColored rounded-[12px] justify-center items-start inline-flex relative items-center",
       arrowColorInHex: "#FFFFFF",
     },
   };

@@ -30,9 +30,9 @@ export const CardTopics = () => {
           "py-10 gap-4 xl:w-[1216px] xl:h-fit grid md:grid-cols-3 md:gap-2 border-b border-[#10584C] md:py-11 grid-rows-1 ",
         ])}
       >
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center smallmobile:w-[280px]">
           <div className="mb-5 items-start">
-            <div className="mb-5">
+            <div className="mb-5 smallmobile:justify-center smallmobile:flex">
               <Image
                 alt="About Illustration 1"
                 src={aboutIllustration}
@@ -51,8 +51,8 @@ export const CardTopics = () => {
         </div>
         <div className="col-span-2">
           <div
-            className={`md:w-fit md:h-full w-[327px] h-[200px] text-justify md:p-medium title-h3-medium-mobile overflow-hidden ${
-              showText ? "h-fit" : "max-h-full line-clamp-none"
+            className={`smallmobile:w-[280px] smallmobile:px-4 md:w-fit md:h-full w-[327px] h-[200px] text-justify md:p-medium title-h3-medium-mobile overflow-hidden ${
+              showText ? "h-fit " : "max-h-full line-clamp-none  "
             }`}
           >
             With Swaplace, we believe in a decentralized future where
@@ -80,7 +80,7 @@ export const CardTopics = () => {
                 setShowText(!showText);
               }}
               className={
-                "hover:text-transparent inline-flex justify-center items-center gap-2 hover:opacity-25"
+                "hover:text-transparent inline-flex justify-center items-center gap-2 hover:opacity-25 smallmobile:ml-4 smallmobile:mt-4"
               }
             >
               <p className="text-secondaryColored">Read More</p>
@@ -96,9 +96,9 @@ export const CardTopics = () => {
           "py-10 gap-4 xl:w-[1216px] xl:h-fit grid md:grid-cols-3 md:gap-2 border-b border-[#10584C] md:py-11 grid-rows-1 ",
         ])}
       >
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center smallmobile:w-[280px]">
           <div className="mb-5 items-start ">
-            <div className="mb-5 ">
+            <div className="mb-5 smallmobile:justify-center smallmobile:flex">
               <Image
                 alt="About Illustration 2"
                 src={aboutIllustration2}
@@ -117,7 +117,7 @@ export const CardTopics = () => {
         </div>
         <div className="col-span-2">
           <div
-            className={`md:w-fit md:h-full w-[327px] h-[200px] text-justify md:p-medium title-h3-medium-mobile overflow-hidden ${
+            className={`smallmobile:w-[280px] smallmobile:px-4  md:w-fit md:h-full w-[327px] h-[200px] text-justify md:p-medium title-h3-medium-mobile overflow-hidden ${
               showText ? "h-fit" : "max-h-full line-clamp-none"
             }`}
           >
@@ -139,7 +139,7 @@ export const CardTopics = () => {
                   setShowText(!showText);
                 }}
                 className={
-                  "hover:text-transparent inline-flex justify-center items-center gap-2 hover:opacity-25"
+                  "hover:text-transparent inline-flex justify-center items-center gap-2 hover:opacity-25 smallmobile:ml-4 smallmobile:mt-4"
                 }
               >
                 <p className="text-secondaryColored">Read More</p>
@@ -156,9 +156,9 @@ export const CardTopics = () => {
           "py-10 gap-4 xl:w-[1216px] xl:h-fit grid md:grid-cols-3 md:gap-2 border-b border-[#10584C] md:py-11 grid-rows-1 ",
         ])}
       >
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center smallmobile:w-[280px]">
           <div className="mb-5 items-start ">
-            <div className="mb-5">
+            <div className="mb-5 smallmobile:justify-center smallmobile:flex">
               <Image
                 alt="About Illustration3"
                 src={aboutIllustration3}
@@ -177,7 +177,7 @@ export const CardTopics = () => {
         </div>
         <div className="col-span-2">
           <div
-            className={`md:w-fit md:h-full w-[327px] h-[200px] text-justify md:p-medium title-h3-medium-mobile overflow-hidden ${
+            className={`smallmobile:w-[280px] smallmobile:px-4  md:w-fit md:h-full w-[327px] h-[200px] text-justify md:p-medium title-h3-medium-mobile overflow-hidden ${
               showText ? "h-fit" : "max-h-full line-clamp-none"
             }`}
           >
@@ -204,7 +204,7 @@ export const CardTopics = () => {
                   setShowText(!showText);
                 }}
                 className={
-                  "hover:text-transparent inline-flex justify-center items-center gap-2 hover:opacity-25 "
+                  "hover:text-transparent inline-flex justify-center items-center gap-2 hover:opacity-25 smallmobile:ml-4 smallmobile:mt-4 "
                 }
               >
                 <p className="text-secondaryColored ">Read More</p>
@@ -221,9 +221,9 @@ export const CardTopics = () => {
           "py-10 gap-4 xl:w-[1216px] xl:h-fit grid md:grid-cols-3 md:gap-2 md:border-b md:border-[#10584C] md:py-11 grid-rows-1 ",
         ])}
       >
-        <div className="flex-col items-center justify-center flex">
+        <div className="flex-col items-center justify-center flex smallmobile:w-[280px]">
           <div className="mb-5 items-start">
-            <div className="mb-5">
+            <div className="mb-5 smallmobile:justify-center smallmobile:flex">
               <Image
                 alt="About Illustration 4"
                 src={aboutIllustration4}
@@ -243,7 +243,7 @@ export const CardTopics = () => {
 
         <div className="col-span-2">
           <div
-            className={`md:w-fit md:h-full w-[327px] h-[200px] text-justify md:p-medium title-h3-medium-mobile overflow-hidden ${
+            className={`smallmobile:w-[280px] smallmobile:px-4  md:w-fit md:h-full w-[327px] h-[200px] text-justify md:p-medium title-h3-medium-mobile overflow-hidden ${
               showText ? "h-fit" : "max-h-full line-clamp-none"
             }`}
           >
@@ -281,7 +281,7 @@ export const CardTopics = () => {
                   setShowText(!showText);
                 }}
                 className={
-                  "hover:text-transparent inline-flex justify-center items-center gap-2 hover:opacity-25 "
+                  "hover:text-transparent inline-flex justify-center items-center gap-2 hover:opacity-25 smallmobile:ml-4 smallmobile:mt-4"
                 }
               >
                 <p className="text-secondaryColored ">Read More</p>

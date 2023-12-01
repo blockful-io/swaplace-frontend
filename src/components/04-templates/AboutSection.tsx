@@ -12,7 +12,7 @@ export const AboutSection = () => {
       <div className="w-full h-[549px] md:h-full flex items-center flex-col justify-center">
         <CardAbout />
       </div>
-      <div className="flex px-6 pb-10  md:px-0 md:pb-0 ">
+      <div className="flex px-6 pb-10 md:px-0 md:pb-0 smallmobile:px-0">
         <CardTopics />
       </div>
     </section>
