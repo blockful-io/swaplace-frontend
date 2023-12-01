@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'smallmobile': {'min': '0px', 'max': '320px'},
+      },
       fontFamily: {
         onest: ["var(--font-onest)"],
       },

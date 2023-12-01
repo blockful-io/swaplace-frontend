@@ -6,7 +6,9 @@ import { blockfulContact } from "@/components/utils";
 export const BannerAbout = () => {
   return (
     <div
-      className={cc(["w-full xl:h-[318px] bg-secondaryColored"])}
+      className={cc([
+        "w-full xl:h-[318px] bg-secondaryColored smallmobile:w-[280px]",
+      ])}
       style={{
         backgroundImage: "url('/about-banner.png')",
         backgroundSize: "contain",
