@@ -7,7 +7,7 @@ export const BannerAbout = () => {
   return (
     <div
       className={cc([
-        "w-full xl:h-[318px] bg-secondaryColored smallmobile:w-[280px]",
+        "w-full md:h-[318px] bg-secondaryColored  md:px-8 md:py-16 px-8 py-[58px] flex items-center justify-center",
       ])}
       style={{
         backgroundImage: "url('/about-banner.png')",
@@ -16,19 +16,21 @@ export const BannerAbout = () => {
         backgroundPosition: "top",
       }}
     >
-      <div className=" items-center justify-center flex-col  grid grid-rows-2">
-        <div className="xl:mt-16 title-h2-medium-2 xl:h-24 xl:w-[671px] lg:h-30 lg:w-[fit] lg:my-4 md:my-4 text-center ">
-          Want to know more about Swaplace ?
-        </div>
-        <div className="items-center justify-center flex">
-          <GenericButton
-            label={"Talk to us"}
-            onClick={() => {
-              window.open(blockfulContact, "_blank");
-            }}
-            variant={ButtonVariant.DEFAULT_WHITE}
-            aditionalStyle="w-[200px] h-[56px] bg-primaryColored button-medium-white"
-          ></GenericButton>
+      <div className="flex justify-center items-center ">
+        <div className=" items-center justify-center flex-col ">
+          <div className="flex md:h-fit md:title-h2-medium-2 title-h2-medium-mobile-green xl:h-24 md:w-[671px] lg:h-30 lg:w-[fit]  text-center w-[311px] h-[56px] smallmobile:w-[280px]">
+            Want to know more about Swaplace ?
+          </div>
+          <div className="flex justify-center items-center mt-8">
+            <GenericButton
+              label={"Talk to us"}
+              onClick={() => {
+                window.open(blockfulContact, "_blank");
+              }}
+              variant={ButtonVariant.DEFAULT_WHITE}
+              aditionalStyle="w-[200px] md:h-[56px] bg-primaryColored md:button-medium-white button-medium-white rounded-[12px] h-[48px]"
+            ></GenericButton>
+          </div>
         </div>
       </div>
     </div>
