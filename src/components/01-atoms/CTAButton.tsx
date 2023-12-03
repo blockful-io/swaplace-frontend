@@ -76,7 +76,7 @@ export function CTAButton<T>({
       <div className="flex items-center justify-center ">
         <div
           className={cc([
-            "w-[40px] h-[40px] md:w-[52px] md:h-[52px] p-5 bg-white bg-opacity-10 rounded-[100px] flex items-center justify-center gap-2.5 group-hover:bg-[#c6de3b]",
+            "w-[40px] h-[40px] md:w-[52px] md:h-[52px] p-5 bg-white bg-opacity-10 rounded-[100px] flex items-center justify-center gap-2.5"
           ])}
         >
           {" "}
