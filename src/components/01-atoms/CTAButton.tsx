@@ -58,7 +58,7 @@ export function CTAButton<T>({
       }}
       className={cc([
         ButtonCTAVariantsConfigs[variant].style,
-        "group flex flex-row hover:bg-button-default justify-between",
+        "group flex flex-row hover:bg-button-default justify-between items-center",
         aditionalStyle,
       ])}
       {...props}
