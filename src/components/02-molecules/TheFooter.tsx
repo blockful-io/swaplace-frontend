@@ -6,9 +6,10 @@ import {
   InstagramLogo,
   LinkedinLogo,
   MediumLogo,
-  SwaplaceLogo,
   TelegramLogo,
   TwitterLogo,
+  SwaplaceLogoMax,
+  SwaplaceLogo,
 } from "@/components/01-atoms";
 import {
   blockfulContact,
@@ -19,9 +20,12 @@ import {
   blockfulWebsite,
   swaplaceTwitter,
 } from "@/components/utils";
+import { useScreenSize } from "@/hooks/useScreenSize";
 import Link from "next/link";
 
 export const TheFooter = () => {
+  const { isMobile } = useScreenSize();
+
   return (
     <footer
       className={cc([
@@ -34,7 +38,7 @@ export const TheFooter = () => {
         >
           <div>
             <Link href="/" aria-label="Swaplace Logo">
-              <SwaplaceLogo />
+              {isMobile ? <SwaplaceLogoMax /> : <SwaplaceLogo />}
             </Link>
           </div>
           <div>
@@ -50,78 +54,107 @@ export const TheFooter = () => {
       </div>
       <div
         className={cc([
-          "w-full h-[72px] py-4 px-5 rounded-xl mt-8 mx-8 bg-[#212322] max-w-screen-2xl ",
+          "md:w-full md:h-[72px] md:py-4 md:px-5 rounded-xl md:mt-8 md:mx-8 bg-[#212322] max-w-screen-2xl w-[311px] h-[117px]  smallmobile:w-[280px] smallmobile:h-[137px] p-4 justify-between ",
         ])}
       >
-        <div className={cc(["flex justify-between w-auto"])}>
-          <div className={cc(["flex-col items-center space-y-2"])}>
-            <div className={cc(["w-fit"])}>
+        <div
+          className={cc([
+            "flex justify-between  md:gap-8",
+            isMobile
+              ? "flex-col-reverse justify-center items-center gap-2 smallmobile:gap-4  "
+              : "flex",
+          ])}
+        >
+          <div
+            className={cc([
+              "flex-col items-center  md:w-full gap-2   ",
+              isMobile ? "justify-center items-center flex" : "flex-col ",
+            ])}
+          >
+            <div className={cc(["w-fit flex md:mb-2"])}>
               <a
                 href={blockfulWebsite}
                 aria-label="Blockful Logo"
                 target="_blank"
+                className="hover:text-black-200"
               >
                 <BlockfulLogo />
               </a>
             </div>
-            <div>
+            <div className="flex">
               <p className={cc(["p-normal-xs"])}>
                 2023 © Blockful. All rights reserved.
               </p>
             </div>
           </div>
-          <div className={cc(["flex items-center space-x-2 "])}>
-            <div>
+          <div className="md:hidden  w-[279px] h-px bg-black-500 smallmobile:w-[249px]"></div>
+
+          <div
+            className={cc([
+              "flex items-center space-x-2 smallmobile:h-[32px] ",
+            ])}
+          >
+            <div className="flex">
               <button
                 onClick={() => {
                   window.open(swaplaceTwitter, "_blank");
                 }}
-                className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 mr-3"
+                className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-2 hover:bg-#464c27"
                 aria-label="Twitter Logo"
               >
                 <TwitterLogo />
               </button>
+            </div>
+            <div className="flex">
               <button
                 onClick={() => {
                   window.open(blockfulDiscord, "_blank");
                 }}
-                className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 mr-3"
+                className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-2 hover:bg-#464c27"
                 aria-label="Discord Logo"
               >
                 <DiscordLogo />
               </button>
+            </div>
+            <div className="flex">
               <button
                 onClick={() => {
                   window.open(blockfulContact, "_blank");
                 }}
-                className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 mr-3"
+                className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-2 hover:bg-#464c27"
                 aria-label="Telegram Logo"
               >
                 <TelegramLogo />
               </button>
+            </div>
+            <div className="flex">
               <button
                 onClick={() => {
                   window.open(blockfulLinkedIn, "_blank");
                 }}
-                className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 mr-3"
+                className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-2 hover:bg-#464c27"
                 aria-label="Linkedin Logo"
               >
                 <LinkedinLogo />
               </button>
+            </div>
+            <div className="flex">
               <button
                 onClick={() => {
                   window.open(blockfulInstagram, "_blank");
                 }}
-                className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 mr-3"
+                className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-2 hover:bg-#464c27"
                 aria-label="Instagram Logo"
               >
                 <InstagramLogo />
               </button>
+            </div>
+            <div className="flex">
               <button
                 onClick={() => {
                   window.open(blockfulMedium, "_blank");
                 }}
-                className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 mr-3"
+                className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-2 hover:bg-#464c27"
                 aria-label="Medium Logo"
               >
                 <MediumLogo />
