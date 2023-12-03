@@ -16,5 +16,6 @@ export * from "./MediumLogo";
 export * from "./SwaplaceLogo";
 export * from "./SwaplaceLogoIcon";
 export * from "./SwaplaceLogoMin";
+export * from "./SwaplaceLogoMax";
 export * from "./TelegramLogo";
 export * from "./TwitterLogo";
