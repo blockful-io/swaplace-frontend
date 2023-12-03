@@ -29,6 +29,10 @@
     @apply font-onest text-terciaryColored text-[24px] font-semibold leading-[28.8px];
   }
 
+  .title-h2-medium-mobile-green {
+    @apply font-onest text-[#05332B] text-[24px] font-semibold leading-[28.8px];
+  }
+
   .title-h2-normal-mobile {
     @apply font-onest text-[32px] text-terciaryColored font-medium leading-[40.8px];
   }
