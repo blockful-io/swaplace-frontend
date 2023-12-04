@@ -60,7 +60,6 @@ export const HeroSection = () => {
               width: "100%",
               top: 0,
               left: 0,
-              zIndex: -1,
             }}
           />
         </div>
@@ -70,7 +69,7 @@ export const HeroSection = () => {
             Feeless environment designed for swaps.
           </h1>
         </div>
-        <div className="md:mt-12 w-[327px] h-[108px] gap-3 flex flex-col justify-center items-center md:flex-row-reverse md:gap-0 smallmobile:w-[280px]">
+        <div className="md:mt-12 w-[327px] h-[108px] gap-3 flex flex-col justify-center items-center md:flex-row-reverse md:gap-0 smallmobile:w-[280px] smallmobile:mt-4">
           <div className="flex">
             <GenericButton
               label={"Start now"}
