@@ -96,7 +96,7 @@ export const MobileMenu = ({ isOpen = true, functionClose }: IMobileMenu) => {
           onClick={() => {
             window.open(blockfulContact, "_blank");
           }}
-          aditionalStyle="button-medium w-[343px] h-[48px] rounded-xl	"
+          aditionalStyle="button-medium w-[343px] h-8 !w-40 rounded-xl	"
         />
       </div>
     </div>

@@ -6,9 +6,9 @@ interface AnimatedArrowProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Arrow = ({ color }: AnimatedArrowProps) => {
   return (
-    <div className=" relative inline-flex items-center group transition-all duration-500 ease-in-out">
+    <div className="relative inline-flex items-center justicy-center group transition-all duration-500 ease-in-out group-hover:ml-2">
       <svg
-        className="absolute leading-none arrow-line opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:-translate-x-3/20 transition-all duration-500 ease-in-out"
+        className="absolute leading-none arrow-line opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
         width="12"
         height="12"
         viewBox="0 0 12 12"
@@ -22,7 +22,7 @@ export const Arrow = ({ color }: AnimatedArrowProps) => {
           />
         </g>
       </svg>
-      <span className="ml-2 group-hover:mr-2 group-hover:opacity-100 transition-all duration-500 ease-in-out"></span>
+      <span className="group-hover:opacity-100 transition-all duration-500 ease-in-out"></span>
     </div>
   );
 };

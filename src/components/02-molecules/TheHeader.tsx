@@ -83,7 +83,7 @@ export const TheHeader = () => {
             onClick={() => {
               window.open(blockfulContact, "_blank");
             }}
-            aditionalStyle="button-small"
+            aditionalStyle="h-8 !w-32 button-small"
           />
         </div>
       </div>

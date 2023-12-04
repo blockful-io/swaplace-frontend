@@ -23,17 +23,17 @@ interface ButtonVariantConfig {
 const ButtonVariantsConfigs: Record<ButtonVariant, ButtonVariantConfig> = {
   [ButtonVariant.DEFAULT]: {
     style:
-      "w-32 h-8 bg-button-default rounded-lg shadow justify-center items-center gap-3 inline-flex ",
+      "w-[205px] h-14 bg-button-default rounded-lg shadow justify-center items-center inline-flex border border-secondaryColored",
     arrowColorInHex: arrowColor.BLACK,
   },
   [ButtonVariant.DEFAULT_WHITE]: {
     style:
-      "w-32 h-8 bg-button-default rounded-lg shadow justify-center items-center gap-3 inline-flex ",
+      "w-[205px] h-14 bg-button-default rounded-lg shadow justify-center items-center inline-flex border border-secondaryColored",
     arrowColorInHex: arrowColor.WHITE,
   },
   [ButtonVariant.ALTERNATIVE]: {
     style:
-      "w-[200px] h-14 px-5 py-2  text-yellow-300 rounded-lg border-[1px] border-yellow-300 justify-center items-center gap-3 inline-flex bg-opacity-5 hover:bg-[#b0ca43] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 mr-3",
+      "w-[205px] h-14 px-5 text-yellow-300 rounded-lg border border-yellow-300 justify-center items-center inline-flex bg-opacity-5 hover:bg-button-default hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-3",
     arrowColorInHex: arrowColor.YELLOW,
   },
 };
@@ -59,7 +59,7 @@ export function GenericButton<T>({
       onClick={onClick}
       className={cc([
         ButtonVariantsConfigs[variant].style,
-        "flex justify-center items-center py-2 gap-2 transition-all duration-300 ease-in-out group ",
+        "flex justify-center items-center py-2 transition-all duration-300 ease-in-out group",
         aditionalStyle,
       ])}
       {...props}

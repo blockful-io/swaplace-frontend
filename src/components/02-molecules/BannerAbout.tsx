@@ -54,7 +54,7 @@ export const BannerAbout = () => {
                 window.open(blockfulContact, "_blank");
               }}
               variant={ButtonVariant.DEFAULT_WHITE}
-              aditionalStyle="w-[200px] md:h-[56px] bg-primaryColored md:button-medium-white button-medium-white rounded-[12px] h-[48px]"
+              aditionalStyle="md:h-[56px] bg-primaryColored md:button-medium-white button-medium-white rounded-[12px] h-[48px]"
             ></GenericButton>
           </div>
         </div>

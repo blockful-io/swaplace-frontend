@@ -74,7 +74,7 @@ export const HeroSection = () => {
             <GenericButton
               label={"Start now"}
               variant={ButtonVariant.DEFAULT}
-              aditionalStyle={"w-[200px] h-[50px] px-5 py-2 button-medium z-10"}
+              aditionalStyle={"px-5 py-2 button-medium z-10"}
               onClick={() => {
                 window.open(swaplaceProject, "_blank");
               }}
@@ -86,7 +86,7 @@ export const HeroSection = () => {
                 window.open(blockfulDiscord, "_blank");
               }}
               label="Meet Swaplace"
-              aditionalStyle="mx-5 w-[205px] button-medium z-10"
+              aditionalStyle="w-[205px] button-medium z-10"
               variant={ButtonVariant.ALTERNATIVE}
             />
           </div>
