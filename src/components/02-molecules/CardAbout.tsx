@@ -7,20 +7,43 @@ import {
   theTeamSectionId,
   whatIsSwaplaceSectionId,
 } from "@/components/utils";
+import aboutCtaBg from "/public/about-cta-bg.png";
+import aboutCtaMobileBg from "/public/about-cta-mobile-bg.png";
+import Image from "next/image";
+import { useScreenSize } from "@/hooks/useScreenSize";
 
 export const CardAbout = () => {
+  const { isTablet } = useScreenSize();
+
   return (
     <div
       className={cc([
         " w-full rounded-b-[20px] px-6 pb-8 gap-10 h-[549px] pt-[100px] xl:w-[1216px] xl:h-[320px] xl:py-[60px] xl:px-12 xl:my-8 lg:w-[900px] lg:h-[350px] md:w-[500px] md:h-[550px] md:pt-4 md:pb-0 md:px-0 border md:rounded-[20px] border-greenLight bg-greenDark  ",
       ])}
-      style={{
-        backgroundImage: "url('/about-cta-bg.png')",
-        backgroundSize: "contain",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "top",
-      }}
+      style={{ position: "relative" }}
     >
+      {isTablet ? (
+        <Image
+          alt="About CTA Background"
+          src={aboutCtaMobileBg}
+          fill={true}
+          quality={100}
+          priority={false}
+          style={{
+            objectFit: "cover",
+          }}
+        />
+      ) : (
+        <Image
+          src={aboutCtaBg}
+          alt={"About CTA Background"}
+          fill={true}
+          style={{
+            objectFit: "contain",
+          }}
+        />
+      )}
+
       <div className="flex flex-col justify-center items-center  md:pt-0">
         <div className="flex justify-center title-h2-normal-mobile lg:title-h1 mb-10 md:title-h2 ">
           <h1>
