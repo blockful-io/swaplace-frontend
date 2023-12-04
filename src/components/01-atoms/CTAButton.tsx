@@ -56,6 +56,12 @@ export function CTAButton<T>({
       onMouseLeave={() => {
         setIsGroupHovered(false);
       }}
+      onTouchStart={() => {
+        setIsGroupHovered(true);
+      }}
+      onTouchEnd={() => {
+        setIsGroupHovered(false);
+      }}
       className={cc([
         ButtonCTAVariantsConfigs[variant].style,
         "group flex flex-row hover:bg-button-default justify-between items-center",
@@ -68,7 +74,7 @@ export function CTAButton<T>({
         <div className="button-big-mobile md:button-big group-hover:text-black-500">
           {label}
         </div>
-        <div className="button-big-mobile-2 md:button-big-2  group-hover:text-black-500">
+        <div className="button-big-mobile-2 md:button-big-2 group-hover:text-black-500">
           {description}
         </div>
       </div>
@@ -76,7 +82,7 @@ export function CTAButton<T>({
       <div className="flex items-center justify-center ">
         <div
           className={cc([
-            "w-[40px] h-[40px] md:w-[52px] md:h-[52px] p-5 bg-white bg-opacity-10 rounded-[100px] flex items-center justify-center gap-2.5"
+            "w-[40px] h-[40px] md:w-[52px] md:h-[52px] p-5 bg-opacity-10 rounded-[100px] flex items-center justify-center gap-2.5",
           ])}
         >
           {" "}
