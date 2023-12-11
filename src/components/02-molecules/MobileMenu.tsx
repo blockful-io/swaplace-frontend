@@ -7,7 +7,7 @@ import {
   GenericButton,
   SwaplaceLogoIcon,
 } from "@/components/01-atoms";
-import { blockfulContact, blockfulDiscord } from "@/components/utils";
+import { blockfulDiscord, swaplaceDapp } from "@/components/utils";
 
 interface IMobileMenu {
   isOpen?: Boolean;
@@ -91,10 +91,10 @@ export const MobileMenu = ({ isOpen = true, functionClose }: IMobileMenu) => {
 
       <div className="p-4 border-white border-opacity-5 flex items-center justify-center">
         <GenericButton
-          label={"Get in touch"}
+          label={"Go to dApp"}
           variant={ButtonVariant.DEFAULT}
           onClick={() => {
-            window.open(blockfulContact, "_blank");
+            window.open(swaplaceDapp, "_blank");
           }}
           aditionalStyle="button-medium w-[343px] h-8 !w-40 rounded-xl	"
         />

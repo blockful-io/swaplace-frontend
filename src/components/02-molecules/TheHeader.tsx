@@ -8,7 +8,7 @@ import {
   SwaplaceLogo,
   SwaplaceLogoMin,
 } from "@/components/01-atoms";
-import { blockfulContact, blockfulDiscord } from "@/components/utils";
+import { blockfulDiscord, swaplaceDapp } from "@/components/utils";
 import { MobileMenu } from "@/components/02-molecules";
 
 export const TheHeader = () => {
@@ -78,10 +78,10 @@ export const TheHeader = () => {
         </div>
         <div className={cc(["justify-center items-center flex shadow"])}>
           <GenericButton
-            label={"Get in touch"}
+            label={"Go to dApp"}
             variant={ButtonVariant.DEFAULT}
             onClick={() => {
-              window.open(blockfulContact, "_blank");
+              window.open(swaplaceDapp, "_blank");
             }}
             aditionalStyle="h-8 !w-32 button-small"
           />

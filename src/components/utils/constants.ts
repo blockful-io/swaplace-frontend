@@ -16,6 +16,7 @@ export const swaplaceContracts =
   "https://github.com/blockful-io/swaplace-contracts";
 export const swaplaceContractsMain =
   "https://github.com/blockful-io/swaplace-contracts/tree/main/contracts";
+export const swaplaceDapp = "https://app.swaplace.xyz";
 
 /*About Section*/
 export const manifestoSectionId = "manifestoSection";
