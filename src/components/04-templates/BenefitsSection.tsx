@@ -11,14 +11,14 @@ export const BenefitsSection = () => {
       ])}
     >
       <div className="md:w-[600px] md:h-full lg:w-[807px] text-center md:title-h2-normal title-h2-small h-[124px] w-[327px] flex justify-center items-center smallmobile:w-[280px] ">
-        <h1>
+        <h2>
           With Swaplace, you can
           <span className="text-secondaryColored">
             {" "}
             create products <br />
           </span>{" "}
           that solve significant issues in the ecosystem
-        </h1>
+        </h2>
       </div>
       <div className=" flex justify-center items-center ">
         <CardBenefits />

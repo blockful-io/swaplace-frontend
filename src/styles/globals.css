@@ -141,10 +141,6 @@ p-bold-upper-case {
   @apply font-onest text-stone-100 text-xs font-semibold uppercase leading-none;
 }
 
-h2 {
-  @apply font-onest font-bold;
-}
-
 label {
   @apply font-onest text-stone-100 text-base font-semibold;
 }

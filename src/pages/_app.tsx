@@ -25,10 +25,7 @@ export default function MyApp({
           content="Swaplace is a P2P DEX, Ownerless, Open-source, Cross-chain and Feeless environment designed for swaps."
         />
         <meta name="robots" content="index" />
-        <link
-          rel="canonical"
-          href="https://swaplace-frontend.vercel.app/about"
-        />
+        <link rel="canonical" href="https://swaplace.xyz/" />
       </Head>
       <ThemeContextProvider>
         <CookiesProvider>
