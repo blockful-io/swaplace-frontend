@@ -10,6 +10,7 @@ import {
   TwitterLogo,
   SwaplaceLogoMax,
   SwaplaceLogo,
+  GithubLogo,
 } from "@/components/01-atoms";
 import {
   blockfulContact,
@@ -18,6 +19,7 @@ import {
   blockfulLinkedIn,
   blockfulMedium,
   blockfulWebsite,
+  swaplaceGithubContracts,
   swaplaceTwitter,
 } from "@/components/utils";
 import { useScreenSize } from "@/hooks/useScreenSize";
@@ -94,6 +96,17 @@ export const TheFooter = () => {
               "flex items-center space-x-2 smallmobile:h-[32px] ",
             ])}
           >
+            <div className="flex">
+              <button
+                onClick={() => {
+                  window.open(swaplaceGithubContracts, "_blank");
+                }}
+                className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-2 hover:bg-#464c27"
+                aria-label="Github Logo"
+              >
+                <GithubLogo />
+              </button>
+            </div>
             <div className="flex">
               <button
                 onClick={() => {
