@@ -9,6 +9,7 @@ export * from "./CloseIcon";
 export * from "./CTAButton";
 export * from "./DiscordLogo";
 export * from "./GenericButton";
+export * from "./GithubLogo";
 export * from "./InstagramLogo";
 export * from "./LinkedinLogo";
 export * from "./LoadingIndicator";
