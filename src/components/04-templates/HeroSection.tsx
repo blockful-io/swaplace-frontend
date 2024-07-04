@@ -1,5 +1,6 @@
 import cc from "classcat";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
+const DynamicLottie = dynamic(() => import("lottie-react"), { ssr: false });
 import groovyWalkAnimation from "@/components/animation/typing.json";
 import { GenericButton, ButtonVariant } from "@/components/01-atoms";
 import { blockfulDiscord, swaplaceProject } from "@/components/utils";
@@ -50,7 +51,7 @@ export const HeroSection = () => {
         )}
 
         <div className="w-[327px] md:w-fit smallmobile:w-[280px]">
-          <Lottie
+          <DynamicLottie
             animationData={groovyWalkAnimation}
             loop={true}
             autoPlay={true}
