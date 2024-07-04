@@ -8,6 +8,7 @@ export * from "./Card";
 export * from "./CloseIcon";
 export * from "./CTAButton";
 export * from "./DiscordLogo";
+export * from "./GitbookLogo";
 export * from "./GenericButton";
 export * from "./GithubLogo";
 export * from "./InstagramLogo";
