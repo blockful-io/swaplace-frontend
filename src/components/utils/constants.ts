@@ -1,6 +1,6 @@
 /*Blockful Constants*/
 export const blockfulTwitter = "https://twitter.com/blockful_io";
-export const blockfulDiscord = "https://discord.gg/B6uDmm7hvC";
+export const blockfulDiscord = "https://discord.gg/nD2VXaPR4z";
 export const blockfulLinkedIn = "https://www.linkedin.com/company/blockful/";
 export const blockfulInstagram = "https://www.instagram.com/blockful.io/";
 export const blockfulWebsite = "https://blockful.io/";
