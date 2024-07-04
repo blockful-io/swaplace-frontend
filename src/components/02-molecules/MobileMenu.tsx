@@ -4,10 +4,20 @@ import Link from "next/link";
 import {
   ButtonVariant,
   CloseIcon,
+  DiscordLogo,
   GenericButton,
+  GitbookLogo,
+  GithubLogo,
   SwaplaceLogoIcon,
+  TwitterLogo,
 } from "@/components/01-atoms";
-import { blockfulWebsite, swaplaceDapp } from "@/components/utils";
+import {
+  blockfulDiscord,
+  blockfulWebsite,
+  swaplaceDapp,
+  swaplaceGithubContracts,
+  swaplaceTwitter,
+} from "@/components/utils";
 
 interface IMobileMenu {
   isOpen?: Boolean;
@@ -39,9 +49,9 @@ export const MobileMenu = ({ isOpen = true, functionClose }: IMobileMenu) => {
       ])}
     >
       <div>
-        <div className="flex items-center justify-between px-4 py-4 border-b border-white border-opacity-5">
+        <div className="flex items-center justify-between px-8 py-4 border-b border-white border-opacity-5">
           <Link href={"/"} aria-label="Swaplace Logo Icon">
-            <SwaplaceLogoIcon />
+            <SwaplaceLogoIcon className="w-[40px] h-[40px]" />
           </Link>
           <button
             onClick={() => {
@@ -53,23 +63,23 @@ export const MobileMenu = ({ isOpen = true, functionClose }: IMobileMenu) => {
           </button>
         </div>
 
-        <div className="w-full p-4 gap-2 flex flex-col">
+        <div className="w-full p-4 gap-8 flex flex-col">
           <Link
-            className="p-small h-[40px] py-1 px-4 flex-grow flex justify-center flex-col items-start rounded-lg	 hover:bg-greenLight"
+            className="p-small !text-[24px] h-[40px] py-1 px-4 flex-grow flex justify-center flex-col items-start rounded-lg	 hover:bg-greenLight"
             aria-label="Home"
             href={"/"}
           >
             Home
           </Link>
           <Link
-            className="p-small h-[40px] py-1 px-4 flex-grow flex justify-center flex-col items-start rounded-lg hover:bg-greenLight "
+            className="p-small !text-[24px] h-[40px] py-1 px-4 flex-grow flex justify-center flex-col items-start rounded-lg hover:bg-greenLight "
             aria-label="About"
             href={"/about"}
           >
             About
           </Link>
           <button
-            className="p-small h-[40px] py-1 px-4 flex-grow flex justify-center flex-col items-start rounded-lg hover:bg-greenLight "
+            className="p-small !text-[24px] h-[40px] py-1 px-4 flex-grow flex justify-center flex-col items-start rounded-lg hover:bg-greenLight "
             aria-label="Blockful"
             onClick={() => {
               window.open(blockfulWebsite, "_blank");
@@ -80,15 +90,55 @@ export const MobileMenu = ({ isOpen = true, functionClose }: IMobileMenu) => {
         </div>
       </div>
 
-      <div className="p-4 border-white border-opacity-5 flex items-center justify-center">
-        <GenericButton
-          label={"Go to dApp"}
-          variant={ButtonVariant.DEFAULT}
-          onClick={() => {
-            window.open(swaplaceDapp, "_blank");
-          }}
-          aditionalStyle="button-medium w-[343px] h-8 !w-40 rounded-xl	"
-        />
+      <div className="p-4 border-white border-opacity-5 flex flex-col items-center justify-center">
+        <div className="w-full p-8 gap-4 flex justify-center items-center">
+          <button
+            onClick={() => {
+              window.open(swaplaceGithubContracts, "_blank");
+            }}
+            className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-2 hover:bg-#464c27"
+            aria-label="Gitbook Logo"
+          >
+            <GitbookLogo />
+          </button>
+          <button
+            onClick={() => {
+              window.open(swaplaceGithubContracts, "_blank");
+            }}
+            className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-2 hover:bg-#464c27"
+            aria-label="Github Logo"
+          >
+            <GithubLogo />
+          </button>
+          <button
+            onClick={() => {
+              window.open(swaplaceTwitter, "_blank");
+            }}
+            className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-2 hover:bg-#464c27"
+            aria-label="Twitter Logo"
+          >
+            <TwitterLogo />
+          </button>
+          <button
+            onClick={() => {
+              window.open(blockfulDiscord, "_blank");
+            }}
+            className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-2 hover:bg-#464c27"
+            aria-label="Discord Logo"
+          >
+            <DiscordLogo />
+          </button>
+        </div>
+        <div>
+          <GenericButton
+            label={"Go to dApp"}
+            variant={ButtonVariant.DEFAULT}
+            onClick={() => {
+              window.open(swaplaceDapp, "_blank");
+            }}
+            aditionalStyle="button-medium w-[343px] h-8 !w-40 rounded-xl	"
+          />
+        </div>
       </div>
     </div>
   );
