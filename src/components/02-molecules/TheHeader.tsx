@@ -7,17 +7,29 @@ import {
   GenericButton,
   SwaplaceLogo,
   SwaplaceLogoMin,
+  GithubLogo,
+  GitbookLogo,
+  TwitterLogo,
+  DiscordLogo,
 } from "@/components/01-atoms";
-import { blockfulWebsite, swaplaceDapp } from "@/components/utils";
+import {
+  blockfulDiscord,
+  blockfulWebsite,
+  swaplaceDapp,
+  swaplaceGithubContracts,
+  swaplaceTwitter,
+} from "@/components/utils";
 import { MobileMenu } from "@/components/02-molecules";
+import { useScreenSize } from "@/hooks/useScreenSize";
 
 export const TheHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { isWideScreen } = useScreenSize();
 
   return (
     <header
       className={cc([
-        "lg:w-full lg:h-16 lg:flex top-0 px-8 gap-8 w-[359px]  rounded-xl  items-center fixed bg-emerald-950  mt-4 mx-8 p-4 z-50 md:w-[704px]  lg:max-xl:w-[960px]  xl:max-2xl:w-[1376px]  2xl:w-[1500px] smallmobile:w-[280px]",
+        "lg:w-full lg:h-16 lg:flex top-0 px-8 w-[359px]  rounded-xl  items-center fixed bg-emerald-950  mt-4 mx-8 p-4 z-50 md:w-[704px]  lg:max-xl:w-[960px]  xl:max-2xl:w-[1376px]  2xl:w-[1500px] smallmobile:w-[280px]",
       ])}
     >
       <div className="hidden lg:flex space-x-4 justify-between w-full">
@@ -25,6 +37,7 @@ export const TheHeader = () => {
           <Link
             className={cc([
               "w-fit h-full opacity-80 justify-start items-center gap-[6.45px] flex pl-4 pr-4 rounded-lg ",
+              isWideScreen && "pr-[134px]",
             ])}
             href="/"
             aria-label="Swaplace Logo"
@@ -65,15 +78,56 @@ export const TheHeader = () => {
             </div>
           </Link>
         </div>
-        <div className={cc(["justify-center items-center flex shadow"])}>
-          <GenericButton
-            label={"Go to dApp"}
-            variant={ButtonVariant.DEFAULT}
-            onClick={() => {
-              window.open(swaplaceDapp, "_blank");
-            }}
-            aditionalStyle="h-8 !w-32 button-small"
-          />
+
+        <div className={"justify-center items-center flex shadow gap-3"}>
+          <div className="flex justify-normal">
+            <button
+              onClick={() => {
+                window.open(swaplaceGithubContracts, "_blank");
+              }}
+              className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-2 hover:bg-#464c27"
+              aria-label="Gitbook Logo"
+            >
+              <GitbookLogo />
+            </button>
+            <button
+              onClick={() => {
+                window.open(swaplaceGithubContracts, "_blank");
+              }}
+              className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-2 hover:bg-#464c27"
+              aria-label="Github Logo"
+            >
+              <GithubLogo />
+            </button>
+            <button
+              onClick={() => {
+                window.open(swaplaceTwitter, "_blank");
+              }}
+              className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-2 hover:bg-#464c27"
+              aria-label="Twitter Logo"
+            >
+              <TwitterLogo />
+            </button>
+            <button
+              onClick={() => {
+                window.open(blockfulDiscord, "_blank");
+              }}
+              className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-2 hover:bg-#464c27"
+              aria-label="Discord Logo"
+            >
+              <DiscordLogo />
+            </button>
+          </div>
+          <div className="flex justify-end">
+            <GenericButton
+              label={"Go to dApp"}
+              variant={ButtonVariant.DEFAULT}
+              onClick={() => {
+                window.open(swaplaceDapp, "_blank");
+              }}
+              aditionalStyle="h-8 !w-32 button-small"
+            />
+          </div>
         </div>
       </div>
 
