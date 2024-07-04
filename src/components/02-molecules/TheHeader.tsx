@@ -8,7 +8,7 @@ import {
   SwaplaceLogo,
   SwaplaceLogoMin,
 } from "@/components/01-atoms";
-import { blockfulDiscord, swaplaceDapp } from "@/components/utils";
+import { blockfulWebsite, swaplaceDapp } from "@/components/utils";
 import { MobileMenu } from "@/components/02-molecules";
 
 export const TheHeader = () => {
@@ -57,22 +57,11 @@ export const TheHeader = () => {
             className={cc([
               "w-fit px-4 py-1 hover:bg-[#05332B] bg-emerald-950 rounded-lg justify-start items-center flex",
             ])}
-            href={blockfulDiscord}
+            href={blockfulWebsite}
             target="_blank"
           >
             <div className="text-center font-onest text-stone-100 text-base font-normal leading-tight">
-              <button aria-label="Community">Community</button>
-            </div>
-          </Link>
-          <Link
-            className={cc([
-              "w-fit px-4 py-1 hover:bg-[#05332B] bg-emerald-950 rounded-lg justify-start items-center flex",
-            ])}
-            href={blockfulDiscord}
-            target="_blank"
-          >
-            <div className="text-center text-stone-100 text-base font-normal font-onest">
-              <button aria-label="Incentives">Incentives</button>
+              <button aria-label="Blockful">Blockful</button>
             </div>
           </Link>
         </div>

@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 const DynamicLottie = dynamic(() => import("lottie-react"), { ssr: false });
 import groovyWalkAnimation from "@/components/animation/typing.json";
 import { GenericButton, ButtonVariant } from "@/components/01-atoms";
-import { blockfulDiscord, swaplaceProject } from "@/components/utils";
+import { swaplaceDapp, swaplaceDocs } from "@/components/utils";
 import Image from "next/image";
 import { useScreenSize } from "@/hooks/useScreenSize";
 
@@ -73,20 +73,20 @@ export const HeroSection = () => {
         <div className="md:mt-12 w-[327px] h-[108px] gap-3 flex flex-col justify-center items-center md:flex-row-reverse md:gap-0 smallmobile:w-[280px] smallmobile:mt-4">
           <div className="flex">
             <GenericButton
-              label={"Start now"}
+              label={"Go to dApp"}
               variant={ButtonVariant.DEFAULT}
               aditionalStyle={"px-5 py-2 button-medium z-10"}
               onClick={() => {
-                window.open(swaplaceProject, "_blank");
+                window.open(swaplaceDapp, "_blank");
               }}
             />
           </div>
           <div className="flex">
             <GenericButton
               onClick={() => {
-                window.open(blockfulDiscord, "_blank");
+                window.open(swaplaceDocs, "_blank");
               }}
-              label="Meet Swaplace"
+              label="Learn"
               aditionalStyle="w-[205px] button-medium z-10"
               variant={ButtonVariant.ALTERNATIVE}
             />

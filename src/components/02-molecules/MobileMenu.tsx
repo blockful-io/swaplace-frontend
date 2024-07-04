@@ -7,7 +7,7 @@ import {
   GenericButton,
   SwaplaceLogoIcon,
 } from "@/components/01-atoms";
-import { blockfulDiscord, swaplaceDapp } from "@/components/utils";
+import { blockfulWebsite, swaplaceDapp } from "@/components/utils";
 
 interface IMobileMenu {
   isOpen?: Boolean;
@@ -70,21 +70,12 @@ export const MobileMenu = ({ isOpen = true, functionClose }: IMobileMenu) => {
           </Link>
           <button
             className="p-small h-[40px] py-1 px-4 flex-grow flex justify-center flex-col items-start rounded-lg hover:bg-greenLight "
-            aria-label="Community"
+            aria-label="Blockful"
             onClick={() => {
-              window.open(blockfulDiscord, "_blank");
+              window.open(blockfulWebsite, "_blank");
             }}
           >
-            Community
-          </button>
-          <button
-            className="p-small h-[40px] py-1 px-4 flex-grow flex justify-center flex-col items-start rounded-lg hover:bg-greenLight "
-            aria-label="Incentives"
-            onClick={() => {
-              window.open(blockfulDiscord, "_blank");
-            }}
-          >
-            Incentives
+            Blockful
           </button>
         </div>
       </div>
