@@ -3,7 +3,7 @@ import { ButtonCTAVariant, CTAButton } from "@/components/01-atoms";
 import {
   blockfulContact,
   blockfulDiscord,
-  swaplaceContracts,
+  swaplaceDocs,
 } from "@/components/utils";
 
 export const CardLinks = () => {
@@ -19,7 +19,7 @@ export const CardLinks = () => {
                 "The kickstart between you and your next hackathon project."
               }
               onClick={() => {
-                window.open(swaplaceContracts, "_blank");
+                window.open(swaplaceDocs, "_blank");
               }}
             />
           </div>

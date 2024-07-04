@@ -1,7 +1,8 @@
-import React from "react";
+import React, { SVGProps } from "react";
 
-export const SwaplaceLogoIcon = () => (
+export const SwaplaceLogoIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
+    {...props}
     width="29"
     height="18"
     viewBox="0 0 29 18"
