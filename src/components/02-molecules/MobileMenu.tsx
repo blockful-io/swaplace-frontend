@@ -15,6 +15,7 @@ import {
   blockfulDiscord,
   blockfulWebsite,
   swaplaceDapp,
+  swaplaceDocs,
   swaplaceGithubContracts,
   swaplaceTwitter,
 } from "@/components/utils";
@@ -94,7 +95,7 @@ export const MobileMenu = ({ isOpen = true, functionClose }: IMobileMenu) => {
         <div className="w-full p-8 gap-4 flex justify-center items-center">
           <button
             onClick={() => {
-              window.open(swaplaceGithubContracts, "_blank");
+              window.open(swaplaceDocs, "_blank");
             }}
             className="w-8 h-8 rounded-md inline-flex justify-center items-center bg-opacity-5 hover:bg-[#DDF23D] hover:bg-opacity-30 hover:cursor-pointer hover:transform-all duration-700 md:mr-2 hover:bg-#464c27"
             aria-label="Gitbook Logo"
